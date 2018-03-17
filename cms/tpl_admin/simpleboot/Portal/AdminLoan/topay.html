@@ -51,6 +51,7 @@
                         <td>{$status[$it['status']]}</td>
                         <td>
                             <a href="{:U('AdminLoan/paying',array('id'=>$it['id']))}">打款</a>
+                            <a href="{:U('AdminLoan/verify_status',array('id'=>$it['id']))}">拒绝</a>
                         </td>
                     </tr>
                     </foreach>

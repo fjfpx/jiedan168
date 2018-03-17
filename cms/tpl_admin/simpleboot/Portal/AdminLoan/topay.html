@@ -6,7 +6,7 @@
 			<li class="active"><a href="javascript:;">待打款列表</a></li>
 		</ul>
 		<form class="well form-search" method="post" action="">
-            借款ID:
+            借款人ID: <input type="text" name="uid" class="input" value="{$formget.uid}" style="width:80px;"/>&nbsp;&nbsp;
             借款编号: <input type="text" name="id" class="input" value="{$formget.id}" style="width:80px;"/>&nbsp;&nbsp;
             手机号: <input type="text" name="phone" class="input" value="{$formget.phone}" style="width:100px;"/>&nbsp;&nbsp;
             添加人: <input type="text" name="user_login" class="input" value="{$formget.user_login}" style="width:80px;"/>&emsp;
@@ -24,6 +24,7 @@
                         <th width="120">手机号</th>
                         <th width="120">借款日期</th>
                         <th width="80">借款金额</th>
+                        <th width="80">借款期限</th>
                         <th width="80">放款金额</th>
                         <th width="80">添加人</th>
                         <th width="80">审核人</th>
@@ -41,6 +42,7 @@
                         <td>{$it.phone}</td>
                         <td>{$it.borrowing_time}</td>
                         <td>{$it.borrowing_money}</td>
+                        <td>{$it.borrowing_days}</td>
                         <td>{$it.borrowing_actual_money}</td>
                         <td>{$it.user_login}</td>
                         <td>{$it.verify_user}</td>

@@ -1,0 +1,391 @@
+[ 2018-03-15T00:23:21+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+
+[ 2018-03-15T00:23:33+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+
+[ 2018-03-15T00:23:41+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+
+[ 2018-03-15T00:24:09+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0004s ]
+SQL: UPDATE `jd_users` SET `user_login`='admin',`user_pass`='###909e2f9e36973e44951940ba40e21ba3',`user_nicename`='loieng',`user_email`='admin',`user_url`='',`avatar`=NULL,`sex`='1',`birthday`=NULL,`signature`='',`last_login_ip`='121.205.100.116',`last_login_time`='2018-03-15 00:24:09',`create_time`='2016-09-13 01:34:16',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='0',`department`='' WHERE `id` = '1' [ RunTime:0.0013s ]
+
+[ 2018-03-15T00:25:30+08:00 ] 127.0.0.1 /index.php?g=Admin&m=User&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_role` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '铭琳' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_users` (`user_login`,`user_pass`) VALUES ('铭琳','###8ab289b0e35cb9fbd890fad67921f31b') [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0007s ]
+SQL: INSERT INTO `jd_role_user` (`role_id`,`user_id`) VALUES ('6','28') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jd_role` [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jd_role` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `jd_role_user` (`role_id`,`user_id`) VALUES ('5','28') [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `jd_role` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('1','1','28','添加管理员成功,管理员ID为{28}','1521044730') [ RunTime:0.0008s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('2','1','28','添加管理员权限成功,管理员ID为{28},权限为:风控&审核人员','1521044730') [ RunTime:0.0004s ]
+
+[ 2018-03-15T07:15:54+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='59.60.39.135',`last_login_time`='2018-03-15 07:15:54',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0016s ]
+
+[ 2018-03-15T08:48:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-03-15T08:48:54+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-03-15T08:49:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='59.60.39.135',`last_login_time`='2018-03-15 08:49:17',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0019s ]
+
+[ 2018-03-15T09:44:35+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-03-15T09:44:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = 'minglin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-03-15T09:45:04+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '铭琳' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '28' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='铭琳',`user_pass`='###8ab289b0e35cb9fbd890fad67921f31b',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='111.202.41.226',`last_login_time`='2018-03-15 09:45:04',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '28' [ RunTime:0.0017s ]
+
+[ 2018-03-15T11:37:24+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='59.60.39.135',`last_login_time`='2018-03-15 11:37:24',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0115s ]
+
+[ 2018-03-15T11:49:52+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '蔡致兴' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '26' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='蔡致兴',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='140.224.5.219',`last_login_time`='2018-03-15 11:49:52',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '26' [ RunTime:0.0107s ]
+
+[ 2018-03-15T12:14:55+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+
+[ 2018-03-15T12:15:06+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='59.60.39.135',`last_login_time`='2018-03-15 12:15:06',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0013s ]
+
+[ 2018-03-15T12:36:55+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '蔡大云' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '27' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='蔡大云',`user_pass`='###8ab289b0e35cb9fbd890fad67921f31b',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 12:36:55',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '27' [ RunTime:0.0014s ]
+
+[ 2018-03-15T12:47:56+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+
+[ 2018-03-15T12:48:11+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 12:48:11',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0013s ]
+
+[ 2018-03-15T12:49:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+
+[ 2018-03-15T12:49:47+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+
+[ 2018-03-15T12:49:55+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+
+[ 2018-03-15T12:49:59+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢少均' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢少均',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 12:49:59',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '24' [ RunTime:0.0015s ]
+
+[ 2018-03-15T13:36:34+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 13:36:34',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0013s ]
+
+[ 2018-03-15T14:33:12+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 14:33:12',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0013s ]
+
+[ 2018-03-15T14:34:32+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 14:34:32',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0011s ]
+
+[ 2018-03-15T14:36:49+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 14:36:49',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0018s ]
+
+[ 2018-03-15T15:07:39+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢少均' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢少均',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 15:07:39',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '24' [ RunTime:0.0015s ]
+
+[ 2018-03-15T15:07:46+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '蔡大云' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '27' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `jd_users` SET `user_login`='蔡大云',`user_pass`='###8ab289b0e35cb9fbd890fad67921f31b',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 15:07:46',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '27' [ RunTime:0.0016s ]
+
+[ 2018-03-15T15:33:04+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢文利' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢文利',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 15:33:04',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '25' [ RunTime:0.0075s ]
+
+[ 2018-03-15T17:08:42+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢少均' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢少均',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 17:08:42',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '24' [ RunTime:0.0013s ]
+
+[ 2018-03-15T17:50:50+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+
+[ 2018-03-15T17:50:55+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = 'cui' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `jd_users` SET `user_login`='cui',`user_pass`='###8ab289b0e35cb9fbd890fad67921f31b',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 17:50:55',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '22' [ RunTime:0.0067s ]
+
+[ 2018-03-15T18:11:17+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '蔡致兴' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '26' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='蔡致兴',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='223.104.45.77',`last_login_time`='2018-03-15 18:11:17',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '26' [ RunTime:0.0079s ]
+
+[ 2018-03-15T18:22:59+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+
+[ 2018-03-15T18:23:04+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='admin',`user_pass`='###909e2f9e36973e44951940ba40e21ba3',`user_nicename`='loieng',`user_email`='admin',`user_url`='',`avatar`=NULL,`sex`='1',`birthday`=NULL,`signature`='',`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 18:23:04',`create_time`='2016-09-13 01:34:16',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='0',`department`='' WHERE `id` = '1' [ RunTime:0.0014s ]
+
+[ 2018-03-15T19:30:45+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = 'peter' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '14' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: UPDATE `jd_users` SET `user_login`='peter',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='121.35.101.117',`last_login_time`='2018-03-15 19:30:45',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '14' [ RunTime:0.0120s ]
+
+[ 2018-03-15T20:56:25+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = 'cui' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='cui',`user_pass`='###8ab289b0e35cb9fbd890fad67921f31b',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='218.5.136.146',`last_login_time`='2018-03-15 20:56:25',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '22' [ RunTime:0.0054s ]
+
+[ 2018-03-15T22:02:47+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢少均' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢少均',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='140.243.165.126',`last_login_time`='2018-03-15 22:02:47',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '24' [ RunTime:0.0103s ]
+
+[ 2018-03-15T22:22:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE `user_login` = '卢少均' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: UPDATE `jd_users` SET `user_login`='卢少均',`user_pass`='###b06d02f4205763b1b74261b872980155',`user_nicename`='',`user_email`='',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='140.243.165.126',`last_login_time`='2018-03-15 22:22:02',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`mobile`='',`department`=NULL WHERE `id` = '24' [ RunTime:0.0015s ]
+

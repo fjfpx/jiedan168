@@ -1,0 +1,2847 @@
+[ 2018-03-13T00:06:50+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T00:06:58+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T05:09:29+08:00 ] 127.0.0.1 /404/search_children.js
+ERR: 无法加载控制器:404
+
+[ 2018-03-13T12:01:51+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:02:19+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:02:25+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:03:31+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '177' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('177','1','1520913720','7','2000','600','1400','600','1521388800','2000','1520913811','25') [ RunTime:0.0016s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','25','0','添加借款人ID为{76},合同编号为{1}的贷款成功','1520913811') [ RunTime:0.0010s ]
+
+[ 2018-03-13T12:03:42+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:41:51+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:41:53+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:44:43+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:45:05+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=76
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:45:06+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_credit&id=76
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:46:47+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:46:51+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=76
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:47:07+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_credit&id=76
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:49:15+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0004s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '217' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u6b63\\u804a\\u4e2d......\"}]' WHERE `uid` = '217' [ RunTime:0.0093s ]
+
+[ 2018-03-13T12:50:14+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '26' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '206' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-12\",\"remark_name\":\"\\u5174\",\"remark_content\":\"\\u5fae\\u4fe1\\u7528\\u6237\"},{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5174\",\"remark_content\":\"\\u4ee5\\u4e0b\\u6b3e\"}]' WHERE `uid` = '206' [ RunTime:0.0015s ]
+
+[ 2018-03-13T12:52:43+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:52:55+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:55:24+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=76
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:55:26+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_credit&id=76
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=moxie_phone&uid=177
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:55:53+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:55:54+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=moxie_taobao&uid=177
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T12:56:36+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=moxie_alipay&uid=177
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T12:56:59+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T13:03:25+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=76
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:03:28+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:03:29+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=76
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:03:30+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=76&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:03:33+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:03:37+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:03:37+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:03:38+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T13:03:47+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T13:04:14+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T13:04:15+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T13:04:15+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T13:04:17+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T13:07:10+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '217' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u6b63\\u804a\\u4e2d......\"},{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u903e\\u671f\\u7528\\u6237.\"}]' WHERE `uid` = '217' [ RunTime:0.0012s ]
+
+[ 2018-03-13T13:07:10+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:14:13+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '216' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5362\",\"remark_content\":\"\\u5df2\\u653e\\u6b3e\"}]' WHERE `uid` = '216' [ RunTime:0.0013s ]
+
+[ 2018-03-13T13:14:14+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:14:22+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&p=2
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:14:27+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&p=3
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:14:41+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:15:27+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0010s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '216' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('216','1','1520918040','6','1500','450','1050','450','1521302400','1500','1520918127','24') [ RunTime:0.0019s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','24','0','添加借款人ID为{77},合同编号为{1}的贷款成功','1520918127') [ RunTime:0.0008s ]
+
+[ 2018-03-13T13:15:29+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:18:58+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '26' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '212' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5174\",\"remark_content\":\"\\u8054\\u7cfb\"}]' WHERE `uid` = '212' [ RunTime:0.0174s ]
+
+[ 2018-03-13T13:26:18+08:00 ] 127.0.0.1 /index.php?g=&m=AdminCredit&a=shielding&id=217
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/admincredit/shielding')  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '217' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: username /global/www/cms/application/Common/Model/MemberModel.class.php 第 34 行.
+SQL: UPDATE `jd_member` SET `user_status`='0' WHERE `user_id` = '217' [ RunTime:0.0533s ]
+
+[ 2018-03-13T13:26:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=77
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:26:45+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=77&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:26:49+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:31:37+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T13:53:25+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:21:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-03-13T14:22:50+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '26' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0007s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '212' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5174\",\"remark_content\":\"\\u8054\\u7cfb\"},{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5174\",\"remark_content\":\"\\u7ebf\\u4e0b\\u501f\\u8d37\\u4e0d\\u9700\\u8981\"}]' WHERE `uid` = '212' [ RunTime:0.0022s ]
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:45:38+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:45:39+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:52+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T14:49:58+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T14:54:19+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:54:35+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:55:37+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:55:40+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=18
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:56:29+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '181' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('181','1','1520924100','7','1500','375','1125','375','1521475200','1500','1520924189','24') [ RunTime:0.0199s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','24','0','添加借款人ID为{78},合同编号为{1}的贷款成功','1520924189') [ RunTime:0.0009s ]
+
+[ 2018-03-13T14:56:30+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:56:31+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:56:31+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:56:38+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:56:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=18
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:57:04+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:57:12+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:57:16+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=32
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T14:59:25+08:00 ] 127.0.0.1 /manager/html
+ERR: 无法加载控制器:Manager
+
+[ 2018-03-13T15:05:47+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:05:50+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:05:59+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:06:57+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:06:57+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:06:57+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:06:57+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:06:57+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:06:57+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:06:58+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:06:58+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T15:06:58+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:06:58+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:06:58+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:06:58+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:24+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:07:57+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T15:08:07+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:23+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:23+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:23+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:23+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:23+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:08:23+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T15:08:24+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:24+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:08:24+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:24+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:08:24+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:08:24+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T15:09:33+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:11:26+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:11:28+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:11:30+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=expired&menuid=248
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:13:39+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:15:43+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:15:45+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:17:40+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=paying&id=77
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:17:50+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=topay
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:18:02+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T15:21:35+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:21:37+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:23:48+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:23:51+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:24:55+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:24:57+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:25:45+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:25:49+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:26:51+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:39:10+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:39:11+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:39:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '218' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('218','1','1520926740','7','1500','375','1125','375','1521388800','1500','1520926784','24') [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','24','0','添加借款人ID为{79},合同编号为{1}的贷款成功','1520926784') [ RunTime:0.0008s ]
+
+[ 2018-03-13T15:39:45+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:39:45+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:39:45+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:39:46+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:39:50+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=78
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:39:57+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=78&status=2&refused_msg=%E6%97%A5%E6%9C%9F%E6%89%93%E9%94%99
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:39:58+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:40:07+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:40:31+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '181' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('181','1','1520926800','7','1500','375','1125','375','1521388800','1500','1520926831','24') [ RunTime:0.0116s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','24','0','添加借款人ID为{80},合同编号为{1}的贷款成功','1520926831') [ RunTime:0.0005s ]
+
+[ 2018-03-13T15:40:31+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:41:35+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=expired&menuid=248
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:41:41+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=expired&menuid=248
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:41:46+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=39&op=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:45:03+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:45:07+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:45:39+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:45:41+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=80
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:45:42+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=80&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:45:45+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:46:45+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:48:14+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=paying&id=76
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:48:18+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:48:43+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:49:10+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:59:37+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:59:48+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=79
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:59:50+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=79&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T15:59:53+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:01:15+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:06:07+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '219' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u6b63\\u804a\\u4e2d.....\"}]' WHERE `uid` = '219' [ RunTime:0.0015s ]
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:08:56+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T16:08:57+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:22+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:42+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:17:43+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T16:17:43+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T16:17:43+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T16:17:43+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:22:21+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0006s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '218' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5362\",\"remark_content\":\"\\u5df2\\u7ecf\\u653e\\u6b3e\"}]' WHERE `uid` = '218' [ RunTime:0.0017s ]
+
+[ 2018-03-13T16:22:21+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:50:53+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:51:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '219' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('219','1','1520931000','8','1000','200','800','200','1521475200','1000','1520931104','25') [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','25','0','添加借款人ID为{81},合同编号为{1}的贷款成功','1520931104') [ RunTime:0.0067s ]
+
+[ 2018-03-13T16:51:46+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:51:46+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:52:07+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:52:09+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=81
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:52:12+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_credit&id=81
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:52:33+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=moxie_phone&uid=219
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:52:33+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:52:33+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:52:33+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:52:33+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:52:33+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T16:52:33+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:52:33+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:52:33+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:52:34+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:52:34+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:52:34+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:52:34+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=moxie_taobao&uid=219
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T16:53:06+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T16:53:13+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:53:15+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=81
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:53:18+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=81&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:53:21+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:53:54+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:54:00+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=3
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:54:12+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=67
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T16:55:06+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0004s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '194' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u6b63\\u804a\\u4e2d......\"}]' WHERE `uid` = '194' [ RunTime:0.0020s ]
+
+[ 2018-03-13T17:01:28+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:11:53+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:11:55+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:11:56+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:11:56+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:11:57+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:12:04+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:30:07+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:30:10+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:30:17+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=2
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T17:59:31+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '222' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u6b63\\u804a\\u4e2d.......\"}]' WHERE `uid` = '222' [ RunTime:0.0011s ]
+
+[ 2018-03-13T18:01:54+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0008s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '172' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u6b63\\u804a\\u4e2d.......\"}]' WHERE `uid` = '172' [ RunTime:0.0013s ]
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:11:46+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:12:51+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T18:12:52+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:12:52+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T18:13:05+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T18:16:44+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:16:44+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:16:44+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:16:44+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T18:16:44+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:16:44+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:16:44+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:16:44+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:16:44+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:16:45+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T18:16:45+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T18:16:45+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T18:16:45+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T18:16:45+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:16:46+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:22:10+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:22:34+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '172' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('172','1','1520936520','7','1000','200','800','200','1521388800','1000','1520936554','1') [ RunTime:0.0109s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','1','0','添加借款人ID为{82},合同编号为{1}的贷款成功','1520936554') [ RunTime:0.0009s ]
+
+[ 2018-03-13T18:22:36+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:22:50+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:23:00+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=refused&menuid=254
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:23:02+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=refused&menuid=254
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:23:13+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:23:23+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:23:29+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=82
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:23:42+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=82&status=2&refused_msg=000
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:23:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:24:33+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:24:48+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:24:56+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '26' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '172' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('172','1','1520936640','7','1000','200','800','200','1521388800','1000','1520936696','26') [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','26','0','添加借款人ID为{83},合同编号为{1}的贷款成功','1520936696') [ RunTime:0.0008s ]
+
+[ 2018-03-13T18:24:57+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:24:58+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:25:04+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:25:05+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=83
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:25:07+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_credit&id=83
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:25:39+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:25:41+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=83
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:25:45+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=83&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:25:48+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:28:21+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:28:23+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:37:31+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:37:40+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:38:15+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '222' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('222','1','1520937420','7','2000','600','1400','600','1521388800','2000','1520937495','25') [ RunTime:0.0086s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','25','0','添加借款人ID为{84},合同编号为{1}的贷款成功','1520937495') [ RunTime:0.0008s ]
+
+[ 2018-03-13T18:38:16+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:38:16+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:42:38+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:42:41+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:42:44+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:43:48+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:43:51+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=84
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:43:53+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_credit&id=84
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=moxie_phone&uid=222
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T18:44:11+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=moxie_taobao&uid=222
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T18:45:50+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T19:02:27+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:07:57+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:00+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=2
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:04+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=3
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:08+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=expired&menuid=248
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:09+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:14+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=expired&menuid=248
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:15+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=overdue&menuid=249
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:17+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:28+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:32+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:08:34+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:12:25+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:12:27+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:18:15+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:18:17+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:19:15+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:19:16+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=84
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:19:17+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=84&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:19:19+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:19:33+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:19:42+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:19:44+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:43:25+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:43:29+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=37
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:43:33+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:43:35+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&p=2
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:43:37+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&p=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:43:45+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=37
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:43:47+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:43:50+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=37
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:43:57+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=credit&id=37&op=
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:44:09+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=37&op=
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:44:13+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:44:16+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=detail&id=37
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:46:27+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:59:36+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:59:38+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:59:39+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T19:59:41+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T20:41:21+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:41:21+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:41:21+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:41:21+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:41:21+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:41:22+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:41:22+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:41:22+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T20:41:22+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:41:22+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:41:22+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:41:22+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:46:02+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:03+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:46:12+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:19+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:45+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T20:46:46+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T20:46:46+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T20:59:22+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T20:59:24+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:04:46+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:04:53+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:05:28+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '226' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('226','1','1520946240','7','2000','600','1400','600','1521388800','2000','1520946328','25') [ RunTime:0.0065s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','25','0','添加借款人ID为{85},合同编号为{1}的贷款成功','1520946328') [ RunTime:0.0009s ]
+
+[ 2018-03-13T21:05:29+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:05:30+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:07:12+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:07:14+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=85
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:07:16+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_credit&id=85
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:07:45+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=moxie_phone&uid=226
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T21:07:48+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=moxie_taobao&uid=226
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T21:08:31+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T21:12:12+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:12:19+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:15:50+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:15:50+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:15:50+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:15:52+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=85
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:15:54+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=85&status=2&refused_msg=000
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:15:57+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:15:57+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:16:30+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '226' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('226','1','1520946900','7','1500','375','1125','375','1521388800','1500','1520946990','25') [ RunTime:0.0018s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','25','0','添加借款人ID为{86},合同编号为{1}的贷款成功','1520946990') [ RunTime:0.0008s ]
+
+[ 2018-03-13T21:16:31+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:16:31+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:17:59+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:19:07+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:19:09+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=86
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:19:10+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=86&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:19:13+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:24:52+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /js/pdfmake.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /js/vfs_fonts.js
+ERR: 无法加载控制器:Js
+
+[ 2018-03-13T21:28:20+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:28:43+08:00 ] 127.0.0.1 /moxie/js/jquery.tmpl.min.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T21:30:03+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T21:31:17+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:31:43+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '26' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '225' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('225','1','1520947860','7','1500','375','1125','375','1521388800','1500','1520947903','26') [ RunTime:0.0123s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','26','0','添加借款人ID为{87},合同编号为{1}的贷款成功','1520947903') [ RunTime:0.0008s ]
+
+[ 2018-03-13T21:31:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:31:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212&p=3
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:31:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&id=&uid=&real_name=&phone=15815896321&status=&user_login=&ustart_time=&uend_time=&start_time=&end_time=
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:31:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:31:44+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:31:54+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=87
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:32:07+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:32:07+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:32:09+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=87
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:32:10+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=87&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:32:13+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T21:34:57+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0006s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '226' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u5df2\\u653e\\u6b3e...\"}]' WHERE `uid` = '226' [ RunTime:0.0014s ]
+
+[ 2018-03-13T21:36:52+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=topay&menuid=253
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T22:47:02+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '157' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u6b63\\u804a\\u4e2d.......\"}]' WHERE `uid` = '157' [ RunTime:0.0014s ]
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-03-13T23:00:45+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-03-13T23:17:44+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T23:18:09+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T23:19:01+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '24' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0005s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '229' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('229','1','1521040680','7','1500','375','1125','375','1521475200','1500','1520954341','24') [ RunTime:0.0196s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0010s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','24','0','添加借款人ID为{88},合同编号为{1}的贷款成功','1520954341') [ RunTime:0.0010s ]
+
+[ 2018-03-13T23:19:02+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=index&menuid=212
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T23:19:09+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T23:19:12+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=88
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T23:19:16+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=88&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T23:19:19+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T23:38:35+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-13T23:42:42+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_remark
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '25' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5') AND b.name IN ('portal/adminloan/add_remark')  [ RunTime:0.0004s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jd_member_base` [ RunTime:0.0005s ]
+SQL: SELECT `remark` FROM `jd_member_base` WHERE `uid` = '228' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jd_member_base` SET `remark`='[{\"remark_time\":\"2018-03-13\",\"remark_name\":\"\\u5229\",\"remark_content\":\"\\u6b63\\u804a\\u4e2d\\u2026\\u2026\"}]' WHERE `uid` = '228' [ RunTime:0.0081s ]
+

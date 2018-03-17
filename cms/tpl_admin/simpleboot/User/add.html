@@ -1,0 +1,103 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('indexadmin/index')}">{:L('USER_INDEXADMIN_INDEX')}</a></li>
+			<li class="active"><a href="javascript:;">添加用户</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('indexadmin/add_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">{:L('USERNAME')}</label>
+					<div class="controls">
+						<input type="text" name="username">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('PASSWORD')}</label>
+					<div class="controls">
+						<input type="password" name="password">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">企业名称</label>
+					<div class="controls">
+						<input type="text" name="company">
+					</div>
+				</div>
+                <div class="control-group">
+                    <label class="control-label">所属行业</label>
+                    <div class="controls">
+                        <input type="text" name="industry">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">运营者姓名</label>
+                    <div class="controls">
+                        <input type="text" name="realname">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">运营者手机</label>
+                    <div class="controls">
+                        <input type="text" name="phone">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">营业执照注册号</label>
+                    <div class="controls">
+                        <input type="text" name="license_no">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">营业执照</label>
+                    <div class="controls">
+						<input type="hidden" name="license" id="thumb1" value="">
+						<a href="javascript:void(0);" onclick="flashupload('albums_pics', '附件上传','thumb1',img_one,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+							<img src="/tpl_admin/simpleboot/Public/assets/images/upload-pic.png" id="thumb1_preview" width="135" style="cursor: hand" />
+						</a>
+						<input type="button" class="btn btn-small" onclick="$('#thumb1_preview').attr('src','/tpl_admin/simpleboot/Public/assets/images/upload-pic.png');$('#thumb1').val('');return false;" value="取消图片">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">组织机构代码证</label>
+                    <div class="controls">
+                        <input type="hidden" name="organization" id="thumb2" value="">
+                        <a href="javascript:void(0);" onclick="flashupload('albums_pics', '附件上传','thumb2',img_one,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+                            <img src="/tpl_admin/simpleboot/Public/assets/images/upload-pic.png" id="thumb2_preview" width="135" style="cursor: hand" />
+                        </a>
+                        <input type="button" class="btn btn-small" onclick="$('#thumb2_preview').attr('src','/tpl_admin/simpleboot/Public/assets/images/upload-pic.png');$('#thumb2').val('');return false;" value="取消图片">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">身份证正反面扫描件</label>
+                    <div class="controls">
+                        <input type="hidden" name="card_pic" id="thumb3" value="">
+                        <a href="javascript:void(0);" onclick="flashupload('albums_pics', '附件上传','thumb3',img_one,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+                            <img src="/tpl_admin/simpleboot/Public/assets/images/upload-pic.png" id="thumb3_preview" width="135" style="cursor: hand" />
+                        </a>
+                        <input type="button" class="btn btn-small" onclick="$('#thumb3_preview').attr('src','/tpl_admin/simpleboot/Public/assets/images/upload-pic.png');$('#thumb3').val('');return false;" value="取消图片">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">授权书（盖章上传）</label>
+                    <div class="controls">
+                        <input type="hidden" name="authorization" id="thumb4" value="">
+                        <a href="javascript:void(0);" onclick="flashupload('albums_pics', '附件上传','thumb4',img_one,'1,jpg|jpeg|gif|png|bmp,1,,,1','','','');return false;">
+                            <img src="/tpl_admin/simpleboot/Public/assets/images/upload-pic.png" id="thumb4_preview" width="135" style="cursor: hand" />
+                        </a>
+						<input type="button" class="btn btn-small" onclick="$('#thumb4_preview').attr('src','/tpl_admin/simpleboot/Public/assets/images/upload-pic.png');$('#thumb4').val('');return false;" value="取消图片">
+                    </div>
+                </div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="{:U('indexadmin/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script type="text/javascript" src="__ROOT__/statics/js/content_addtop.js"></script>
+</body>
+</html>

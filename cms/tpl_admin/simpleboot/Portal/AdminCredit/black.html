@@ -1,0 +1,50 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">黑名单列表</a></li>
+			<li><a href="{:U('AdminCredit/add_black')}">添加黑名单</a></li>
+		</ul>
+        <form class="well form-search" method="post" action="">
+            借款人ID: <input type="text" name="user_id" class="input" value="{$formget.user_id}" style="width:80px;"/>&nbsp;&nbsp;
+            手机号: <input type="text" name="phone" class="input" value="{$formget.phone}" style="width:120px;"/>&nbsp;&nbsp;
+            借款人姓名: <input type="text" name="real_name" class="input" value="{$formget.real_name}" style="width:120px;"/>&nbsp;&nbsp;
+
+            &emsp;&emsp;
+            <input type="submit" class="btn btn-primary" value="查询" />
+        </form>
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr>
+					<th>借款人ID</th>
+					<th>手机号</th>
+                    <th>借款人姓名</th>
+					<th>最后登录IP</th>
+					<th>最后登录时间</th>
+					<th>状态</th>
+					<th width="100">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<php>$user_statuses=array("0"=>"已锁定","1"=>"正常","2"=>L('USER_STATUS_UNVERIFIED'));</php>
+				<foreach name="item['item']" item="vo">
+				<tr <if condition="$vo['is_recharge']=='1'">style='color:red'</if> >
+					<td>{$vo.user_id}</td>
+					<td>{$vo.phone}</td>
+                    <td>{$vo.real_name}</td>
+					<td>{$vo.last_login_ip}</td>
+					<td>{$vo.last_login_time}</td>
+					<td>{$user_statuses[$vo['user_status']]}</td>
+					<td>
+                        <a href="{:U('AdminCredit/cancel',array('id'=>$vo['user_id']))}" class="js-ajax-dialog-btn" data-msg="确定解锁吗?">解除黑名单</a>
+					</td>
+				</tr>
+				</foreach>
+			</tbody>
+		</table>
+		<div class="pagination">{$page}</div>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

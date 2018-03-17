@@ -1,0 +1,317 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+            <li><a href="{:U('AdminLoan/toverify')}">待审核列表</a></li>
+            <li class="active"><a href="#">借款信息</a></li>
+            <li><a href="{:U('AdminLoan/verify_credit',array('id'=>$verify['id']))}">信用信息</a></li>
+		</ul>
+			<div class="row-fluid">
+				<div class="span9" style="width:90%">
+                    <table class="table table-bordered" id="jiekuan">
+                        <tr><td><h5>借款信息</h5></td></tr>
+                        <tr>
+                            <th>借款编号</th>
+                            <td>{$verify.id}</td>
+                            <th>合同号</th>
+                            <td>{$verify.contract}</td>
+                        </tr>
+                        <tr>
+                            <th>借款人ID</th>
+                            <td>{$verify.uid}</td>
+                            <th>借款人</th>
+                            <td>{$verify.real_name}</td>
+                        </tr>
+                        <tr>
+                            <th>手机号</th>
+                            <td>{$verify.phone}</td>
+                            <th>审核状态</th>
+                            <php>$verify_status = array('待审核','通过','拒绝');</php>
+                            <td>{$verify_status[$verify['verify_status']]}</td>
+                        </tr>
+                        <tr>
+                            <th>借款金额</th>
+                            <td>{$verify.borrowing_money}元</td>
+                            <th>手续费</th>
+                            <td>{$verify.borrowing_poundage}元</td>
+                        </tr>
+                        <tr>
+                            <th>实际到账金额</th>
+                            <td>{$verify.borrowing_actual_money}元</td>
+                            <th>借款期限</th>
+                            <td>{$verify.borrowing_days}</td>
+                        </tr>
+                        <tr>
+                            <th>利息</th>
+                            <td>{$verify.borrowing_rate}元</td>
+                            <th>借款时间</th>
+                            <td>{$verify.borrowing_time}</td>
+                        </tr>
+                        <tr>
+                            <th>到期还款金额</th>
+                            <td>{$verify.borrowing_repay}元</td>
+                            <th>到期还款时间</th>
+                            <td>{$verify.borrowing_end_time}</td>
+                        </tr>
+                    </table>
+                    <p>&nbsp;</p>
+                    <table class="table table-bordered" id="jiekuan">
+                        <tr><td><h5>借款添加信息</h5></td></tr>
+                        <tr>
+                            <th>添加人</th>
+                            <td>{$verify.user_login}</td>
+                            <th>添加时间</th>
+                            <td>{$verify.addtime}</td>
+                        </tr>
+                    </table>
+				</div>
+			</div>
+            <div style="padding-left:400px">
+                <textarea name="refused_msg" id="refused_msg"></textarea> *拒绝理由
+            </div>
+			<div class="form-actions" style="padding-left:400px;">
+				<a class="btn btn-primary" style="width:75px;" href="{:U('AdminLoan/verify_status_p',array('id'=>$verify['id'],'status'=>1))}">通过</a>&emsp;&emsp;
+				<a class="btn" id="jujue" href="javascript:;" style="width:75px">拒绝</a>
+			</div>
+	</div>
+	<script type="text/javascript" src="__ROOT__/statics/js/common.js"></script>
+    <script type="text/javascript" src="__ROOT__/statics/js/content_addtop.js"></script>
+	<script type="text/javascript" src="__ROOT__/statics/js/otherdate.js"></script>
+	<script>
+		$(".js-datetime2").simpleCanleder({timeRange: {
+        startYear: 1900,
+        endYear: 2049
+      }});
+	</script>
+	<script type="text/javascript">
+		//编辑器路径定义
+		var editorURL = GV.DIMAUB;
+	</script>
+	<script type="text/javascript" src="__ROOT__/statics/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__ROOT__/statics/js/ueditor/ueditor.all.min.js"></script>
+	<script type="text/javascript">
+        var verify = {$verify['id']};
+		$(function() {
+            $('#jujue').click(function(){
+               //var val = $('#refused_msg').value;
+               var val = document.getElementById("refused_msg").value;
+               var val = val.replace(/(^\s*)|(\s*$)/g, ""); 
+               if(val.length <1){
+                 alert('拒绝原因不能为空');
+               }else{
+                var href = "/index.php?g=&m=AdminLoan&a=verify_status_p&id="+verify+"&status=2&refused_msg="+val;
+                location.href= href;
+               }
+            });
+            
+			$(".js-ajax-close-btn").on('click', function(e) {
+				e.preventDefault();
+				Wind.use("artDialog", function() {
+					art.dialog({
+						id : "question",
+						icon : "question",
+						fixed : true,
+						lock : true,
+						background : "#CCCCCC",
+						opacity : 0,
+						content : "您确定需要关闭当前页面嘛？",
+						ok : function() {
+							setCookie("refersh_time", 1);
+							window.close();
+							return true;
+						}
+					});
+				});
+			});
+
+			/////---------------------
+			Wind.use('validate', 'ajaxForm', 'artDialog', function() {
+				//javascript
+
+				//编辑器
+				editorcontent = new baidu.editor.ui.Editor();
+				editorcontent.render('content');
+				try {
+					editorcontent.sync();
+				} catch (err) {
+				}
+				//增加编辑器验证规则
+				jQuery.validator.addMethod('editorcontent', function() {
+					try {
+						editorcontent.sync();
+					} catch (err) {
+					}
+					return editorcontent.hasContents();
+				});
+				var form = $('form.js-ajax-forms');
+				//ie处理placeholder提交问题
+				if ($.browser.msie) {
+					form.find('[placeholder]').each(function() {
+						var input = $(this);
+						if (input.val() == input.attr('placeholder')) {
+							input.val('');
+						}
+					});
+				}
+
+				var formloading = false;
+				//表单验证开始
+				form.validate({
+					//是否在获取焦点时验证
+					onfocusout : false,
+					//是否在敲击键盘时验证
+					onkeyup : false,
+					//当鼠标掉级时验证
+					onclick : false,
+					//验证错误
+					showErrors : function(errorMap, errorArr) {
+						//errorMap {'name':'错误信息'}
+						//errorArr [{'message':'错误信息',element:({})}]
+						try {
+							$(errorArr[0].element).focus();
+							art.dialog({
+								id : 'error',
+								icon : 'error',
+								lock : true,
+								fixed : true,
+								background : "#CCCCCC",
+								opacity : 0,
+								content : errorArr[0].message,
+								cancelVal : '确定',
+								cancel : function() {
+									$(errorArr[0].element).focus();
+								}
+							});
+						} catch (err) {
+						}
+					},
+					//验证规则
+					rules : {
+						'uid' : {
+							required : 1
+						},
+                        'contract' : {
+                            required : 1
+                        },
+                        'trade_no' : {
+                            required : 1
+                        },
+                        'borrowing_time' : {
+                            required : 1
+                        },
+                        'borrowing_days' : {
+                            required : 1
+                        },
+                        'borrowing_money' : {
+                            required : 1
+                        },
+                        'borrowing_poundage' : {
+                            required : 1
+                        },
+                        'borrowing_actual_money' : {
+                            required : 1
+                        },
+                        'borrowing_rate' : {
+                            required : 1
+                        },
+                        'borrowing_end_time' : {
+                            required : 1
+                        },
+                        'borrowing_repay' : {
+                            required : 1
+                        }
+					},
+					//验证未通过提示消息
+					messages : {
+						'uid' : {
+							required : '请输入借款人ID'
+						},
+                        'contract' : {
+                            required : '请输入合同号'
+                        },
+                        'trade_no' : {
+                            required : '请输入转账流水号'
+                        },
+                        'borrowing_time' : {
+                            required : '请输入借款时间'
+                        },
+                        'borrowing_days' : {
+                            required : '请输入借款期限'
+                        },
+                        'borrowing_money' : {
+                            required : '请输入借款金额'
+                        },
+                        'borrowing_poundage' : {
+                            required : '请输入借款手续费'
+                        },
+                        'borrowing_actual_money' : {
+                            required : '请输入实际到账金额'
+                        },
+                        'borrowing_rate' : {
+                            required : '请输入利息'
+                        },
+                        'borrowing_end_time' : {
+                            required : '请输入借款到期时间'
+                        },
+                        'borrowing_repay' : {
+                            required : '请输入到期还款金额'
+                        }
+					},
+					//给未通过验证的元素加效果,闪烁等
+					highlight : false,
+					//是否在获取焦点时验证
+					onfocusout : false,
+					//验证通过，提交表单
+					submitHandler : function(forms) {
+						if (formloading)
+							return;
+						$(forms).ajaxSubmit({
+							url : form.attr('action'), //按钮上是否自定义提交地址(多按钮情况)
+							dataType : 'json',
+							beforeSubmit : function(arr, $form, options) {
+								formloading = true;
+							},
+							success : function(data, statusText, xhr, $form) {
+								formloading = false;
+								if (data.status) {
+									setCookie("refersh_time", 1);
+									//添加成功
+									Wind.use("artDialog", function() {
+										art.dialog({
+											id : "succeed",
+											icon : "succeed",
+											fixed : true,
+											lock : true,
+											background : "#CCCCCC",
+											opacity : 0,
+											content : data.info,
+											button : [ {
+												name : '继续添加？',
+												callback : function() {
+													reloadPage(window);
+													return true;
+												},
+												focus : true
+											}, {
+												name : '返回列表页',
+												callback : function() {
+													location = "{:U('AdminLoan/toverify')}";
+													return true;
+												}
+											} ]
+										});
+									});
+								} else {
+									isalert(data.info);
+								}
+							}
+						});
+					}
+				});
+			});
+			////-------------------------
+		});
+	</script>
+</body>
+</html>

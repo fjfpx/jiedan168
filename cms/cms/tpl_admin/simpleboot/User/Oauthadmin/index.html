@@ -1,0 +1,103 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">{:L('USER_OAUTHADMIN_INDEX')}</a></li>
+            <li><a href="{:U('oauthadmin/login_total')}">登录统计</a></li>
+		</ul>
+        <form class="well form-search" method="post" action="">
+            用户名 <input type="text" name="username" class="input" value="{$formget.username}" style="width:80px;"/>&nbsp;&nbsp;
+			用户ID <input type="text" name="user_id" class="input" value="{$formget.user_id}" style="width:80px;"/>&nbsp;&nbsp;
+            <select class="select_2" name="vip" style="width:100px">
+                <option value=''>所有等级</option>
+                <option value='1' <if condition=" $formget['vip'] == '1'" > selected</if>>VIP会员</option>
+                <option value='0' <if condition=" $formget['vip'] == '0'" > selected</if>>普通会员</option>
+            </select>&nbsp;&nbsp;
+            <select class="select_2" name="subscribe" style="width:100px">
+                <option value=''>关注状态</option>
+                <option value='1' <if condition=" $formget['subscribe'] == '1'" > selected</if>>已关注</option>
+                <option value='0' <if condition=" $formget['subscribe'] == '0'" > selected</if>>未关注</option>
+            </select>&nbsp;&nbsp;
+            渠道号 <input type="text" name="channel_no" class="input" value="{$formget.channel_no}" style="width:80px;">&nbsp;&nbsp;<br /><br />
+            性别 <select class="select_2" name="sex" style="width:100px">
+                <option value="">全部</option>
+                <option value='1' <if condition=" $formget['sex'] == '1'" > selected</if>>男</option>
+                <option value='2' <if condition=" $formget['sex'] == '2'" > selected</if>>女</option>
+                <option value='0' <if condition=" $formget['sex'] == '0'" > selected</if>>未知</option>
+             </select> &nbsp;&nbsp;
+            来源 <select class="select_2" name="utype" style="width:100px">
+				<option value="">全部</option>
+                <option value='1' <if condition=" $formget['utype'] == '1'" > selected</if>>微信</option>
+                <option value='2' <if condition=" $formget['utype'] == '2'" > selected</if>>QQ</option>
+                <option value='3' <if condition=" $formget['utype'] == '3'" > selected</if>>微博</option>
+            </select> &nbsp;&nbsp; 
+			注册时间 <input type="text" name="start_time" class="js-datetime" value="{$formget.start_time|default=''}" style="width: 120px;" autocomplete="off">-
+                        <input type="text" class="js-datetime" name="end_time" value="{$formget.end_time}" style="width: 120px;" autocomplete="off"> &nbsp;&nbsp;
+            <input type="submit" class="btn btn-primary" value="检索" />&emsp;&emsp;
+            <a href="{:U('oauthadmin/oauthExcel',array('subscribe'=>$formget['subscribe'],'username'=>$formget['username'],'user_id'=>$formget['user_id'],'vip'=>$formget['vip'],'channel_no'=>$formget['channel_no'],'sex'=>$formget['sex'],'utype'=>$formget['utype'],'start_time'=>$formget['start_time'],'end_time'=>$formget['end_time']))}"><input type="button" class="btn btn-primary" value="导出" /></a>
+        </form>
+            查询结果:
+            <table class="table-hover table-bordered" style="400px;">
+                <thead>
+                    <tr>
+                        <th width="100" style="border-bottom:1px solid #ddd">总人数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">{$total}</td>
+                    </tr>
+                </tbody>
+            </table>
+		<form method="post" class="js-ajax-form">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>{:L('USER_FROM')}</th>
+						<th>{:L('USERNAME')}</th>
+                        <th>渠道号</th>
+						<th>是否关注</th>
+                        <th>充值金额</th>
+                        <th>金币余额</th>
+						<th>充值次数</th>
+                        <th>性别</th>
+						<th>{:L('FIRST_LOGIN_TIME')}</th>
+						<th>{:L('LAST_LOGIN_TIME')}</th>
+						<th>{:L('LAST_LOGIN_IP')}</th>
+                        <th>{:L('LOGIN_TIMES')}</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="lists" item="vo">
+					<tr <if condition="$vo['vip']==1">style="color:red"</if>>
+						<td align="center">{$vo.user_id}</td>
+						<td>{$vo.from}</td>
+						<td>{$vo.name}</td>
+                        <td>{$vo.channel_no}</td>
+						<php>$_subscribe = array("未关注","已关注");</php>
+						<td>{$_subscribe[$vo['subscribe']]}</td>
+                        <td>{$vo.recharge_total}元</td>
+                        <td>{$vo['use_coin']+$vo['award_use_coin']}金币</td>
+						<td>{$vo.recharge_counts}</td>
+                        <php> $_sex = array('未知','男','女');</php>
+                        <td>{$_sex[$vo['sex']]}</td>
+						<td>{$vo['create_time']}</td>
+						<td>{$vo['last_login_time']}</td>
+						<td>{$vo.last_login_ip}</td>
+                        <td>{$vo.login_times}</td>
+						<td align="center">
+							<a href="{:U('oauthadmin/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

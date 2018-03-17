@@ -1,0 +1,108 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">逾期列表</a></li>
+		</ul>
+		<form class="well form-search" method="post" action="">
+            借款编号: <input type="text" name="id" class="input" value="{$formget.id}" style="width:80px;"/>&nbsp;&nbsp;
+            借款人ID: <input type="text" name="uid" class="input" value="{$formget.uid}" style="width:80px;"/>&nbsp;&nbsp;
+            借款人: <input type="text" name="real_name" class="input" value="{$formget.real_name}" style="width:80px;"/>&nbsp;&nbsp;
+            手机号: <input type="text" name="phone" class="input" value="{$formget.phone}" style="width:100px;"/>&nbsp;&nbsp;
+            到期时间: <input type="text" name="start_time" class="js-date" value="{$formget.start_time}" style="width:80px;" autocomplete="off"/> - <input type="text" class="js-date" name="end_time" value="{$formget.end_time}" style="width: 80px;" autocomplete="off"> &nbsp; &nbsp;
+			<input type="submit" class="btn btn-primary" value="查询" />
+		</form>
+        <p>&nbsp;</p>
+		<form class="js-ajax-form" action="" method="post">
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+                        <!--<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>-->
+                        <th width="75">借款编号</th>
+                        <th width="70">借款人ID</th>
+                        <th width="60">借款人</th>
+                        <th width="80">手机号</th>
+                        <th width="120">放款时间</th>
+                        <th width="80">借款金额</th>
+                        <th width="80">借款期限</th>
+                        <th width="80">到期时间</th>
+                        <th width="80">状态</th>
+                        <th width="80">添加人</th>
+                        <th width="80">审核人</th>
+                        <th width="80">逾期天数</th>
+                        <th width="150">操作</th>
+					</tr>
+				</thead>
+                    <foreach name="item['item']" item="it">
+                    <tr>
+                        <!--<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$it.id}" title="ID:{$it.id}"></td>-->
+                        <td>{$it.id}</td>
+                        <td>{$it.user_id}</td>
+                        <td>{$it.real_name}</td>
+                        <td>{$it.phone}</td>
+                        <td>{$it.paytime}</td>
+                        <td>{$it.borrowing_money}</td>
+                        <td>{$it.borrowing_days}</td>
+                        <td>{$it.borrowing_end_time}</td>
+                        <php>$status = array('待打款','待还款','已到期','已还款','<font color="red">已逾期</font>','逾期还款');</php>
+                        <td>{$status[$it['status']]}</td>
+                        <td>{$it.user_login}</td>
+                        <td>{$it.verify_user}</td>
+                        <td>{$it.overdue} 天</td>
+                        <td>
+                            <a href="{:U('AdminLoan/detail',array('id'=>$it['id'],'op'=>2))}" >详细资料</a>&emsp;
+                            <a href="{:U('AdminLoan/repay',array('id'=>$it['id']))}">还款</a>
+                        </td>
+                    </tr>
+                    </foreach>
+			</table>
+			<div class="pagination">{$Page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		function refersh_window() {
+			var refersh_time = getCookie('refersh_time');
+			if (refersh_time == 1) {
+				window.location = "{:U('AdminLoan/index',$formget)}";
+			}
+		}
+		setInterval(function() {
+			refersh_window();
+		}, 2000);
+		$(function() {
+			setCookie("refersh_time", 0);
+			Wind.use('ajaxForm', 'artDialog', 'iframeTools', function() {
+				//批量移动
+				$('.js-articles-move').click(function(e) {
+					var str = 0;
+					var id = tag = '';
+					$("input[name='ids[]']").each(function() {
+						if ($(this).attr('checked')) {
+							str = 1;
+							id += tag + $(this).val();
+							tag = ',';
+						}
+					});
+					if (str == 0) {
+						art.dialog.through({
+							id : 'error',
+							icon : 'error',
+							content : '您没有勾选信息，无法进行操作！',
+							cancelVal : '关闭',
+							cancel : true
+						});
+						return false;
+					}
+					var $this = $(this);
+					art.dialog.open("__ROOT__/index.php?g=portal&m=AdminLoan&a=move&ids="+ id, {
+						title : "批量移动",
+						width : "80%"
+					});
+				});
+			});
+		});
+	</script>
+</body>
+</html>

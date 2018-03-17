@@ -1,0 +1,342 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-family: Arial,"Hiragino Sans GB","Microsoft Yahei","Microsoft Yahei UI",微软雅黑,"Segoe UI",Tahoma,宋体b8b体,SimSun,sans-serif;
+}
+
+body {
+    background: #f2f2f2
+}
+
+.floor1 {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    padding: 15px 0 0 90px;
+
+}
+
+.floor1 > .logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    overflow:hidden;
+}
+
+.floor1 > .logo img{
+    position: absolute;
+    width:100%;
+}
+
+.floor1 > h1 {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.floor1 > p {
+    width: 80%;
+    height: 20px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.floor1 > .choice {
+    position: absolute;
+    cursor:pointer;
+    top: 35%;
+    right: 3px;
+    height: 30px;
+}
+
+.floor1 > .choice > img {
+    display: block;
+    height: 100%;
+}
+
+.title {
+    padding: 0 15px 0 25px;
+    height: 45px;
+    border-bottom: solid 1px #e8e8e9;
+    line-height: 45px;
+    font-size: 16px;
+    background: url("/statics/images/icon9.png") 15px center no-repeat;
+    background-size: auto 50%;
+}
+
+.title span {
+    float: right;
+    color: #9b9b9b;
+    font-size: 12px;
+}
+
+.floor2 {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    background: #fff;
+}
+
+.floor2 > .list {
+    margin-left: 15px;
+}
+
+.floor2 > .list li {
+    padding-right: 15px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: solid 1px #e8e8e9;
+    font-size: 14px;
+}
+
+.floor2 > .list li span img {
+    height: 37%;
+    margin-left: 5px;
+    vertical-align: sub;
+}
+
+.floor2 > .list li span {
+    float: right;
+    display: block;
+    height: 100%;
+}
+
+.floor2 > .list li > img {
+    height: 60%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.floor2 .bottom {
+    margin: 15px 15px 0 15px;
+    height: 55px;
+}
+
+.floor2 .bottom li {
+    width: 37%;
+    height: 40px;
+    float: left;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.floor2 .bottom li:nth-last-child(1) {
+    width: 26%;
+}
+
+.floor2 .bottom li p {
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+.floor3 {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+    background: #fff;
+}
+
+.floor3 > .list {
+    margin: 0 0 0 35px;
+    padding-bottom: 10px;
+}
+
+.floor3 > .list li {
+    position: relative;
+    padding: 10px 15px 10px 0;
+    border-bottom: solid 1px #e8e8e9;
+}
+
+.floor3 > .list li:nth-last-child(1):after {
+    display: none;
+}
+
+.floor3 > .list li:nth-last-child(1) {
+    border: none;
+}
+
+.floor3 > .list li:before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #33b2bf;
+    border-radius: 50%;
+    top: 25px;
+    left: -20px;
+    z-index: 1;
+    content: '';
+}
+
+.floor3 > .list li:after {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: url("/statics/images/line.png") center repeat-y;
+    background-size: 50% auto;
+    top: 25px;
+    left: -17px;
+    content: '';
+}
+
+.floor3 > .list li .time {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.floor3 > .list li .note1 {
+    width: 100%;
+    height: 45px;
+    line-height: 35px;
+
+}
+
+.floor3 > .list li .note1 p {
+    width: 50%;
+    display: block;
+    float: left;
+    height: 35px;
+}
+
+.floor3 > .list li .note1 p img {
+    height: 60%;
+    vertical-align: middle;
+}
+
+.floor3 > .list li .note2 {
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.floor3 > .list li .note2:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.floor3 > .list li .note2 p {
+    display: block;
+    float: left;
+    width: 40px;
+    font-size: 14px;
+}
+
+.floor3 > .list li .note2 .text {
+    display: block;
+    float: left;
+    width: calc(100% - 40px);
+    font-size: 14px;
+}
+
+.floor4 {
+    margin: 15px 0 90px 0;
+    text-align: center;
+    line-height: 20px;
+}
+
+.floor4 p {
+    color: #898989;
+    font-size: 12px;
+}
+
+.down {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0 0 10px 1px #ccc;
+}
+
+.down > img {
+    display: block;
+    height: 40px;
+    margin: 10px 0 0 15px;
+
+}
+
+.down > .btn {
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 15px;
+    width: 110px;
+    height: 38px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 35px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration:none;
+    background-color: #32b3bf}
+
+.down > .text {
+    position: absolute;
+    top: 11px;
+    left: 65px;
+    font-size: 15px;
+}
+
+.down > .text p {
+    font-size: 13px;
+    color: #9b9b9b;
+}
+
+/*开始配置页*/
+.configure_floor2 {
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+.configure_floor2 > .list {
+    margin-left: 15px;
+}
+
+.configure_floor2 > .list li {
+    padding-right: 15px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: solid 1px #e8e8e9;
+    font-size: 14px;
+}
+
+.configure_floor2 > .list li span {
+    float: right;
+    display: block;
+    height: 100%;
+
+}
+
+.second-li {
+    padding-left: 8%;
+}
+
+.third-li {
+    text-align: right;
+}

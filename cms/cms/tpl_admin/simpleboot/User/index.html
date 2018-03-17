@@ -1,0 +1,71 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a>{:L('USER_INDEXADMIN_INDEX')}</a></li>
+			<li><a href="{:U('indexadmin/add')}">添加用户</a></li>
+		</ul>
+		<form class="well form-search" method="post" action="">
+            用户名 <input type="text" name="username" class="input" value="{$formget.username}" style="width:80px;"/>&nbsp;&nbsp;
+            用户ID <input type="text" name="user_id" class="input" value="{$formget.user_id}" style="width:80px;"/>&nbsp;&nbsp;
+            <select class="select_2" name="black" style="width:120px">
+				<option value=''>所有用户状态</option>
+                <option value='1' <if condition=" $formget['black'] == '1'" > selected</if>>正常</option>
+                <option value='0' <if condition=" $formget['black'] == '0'" > selected</if>>拉黑</option>
+			</select>
+			<input type="submit" class="btn btn-primary" value="检索" />
+		</form>
+		<form method="post" class="js-ajax-form">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th align="center">ID</th>
+						<th>{:L('USERNAME')}</th>
+                        <th>会员等级</th>
+                        <th>性别</th>
+                        <th>充值总额</th>
+                        <th>当前余额</th>
+						<th width="80">{:L('REGISTRATION_TIME')}</th>
+						<th width="90">{:L('LAST_LOGIN_TIME')}</th>
+						<th>{:L('LAST_LOGIN_IP')}</th>
+						<th>{:L('STATUS')}</th>
+						<th align="center">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<php>$user_statuses=array("0"=>"<font color='red'>".L('USER_STATUS_BLOCKED')."</font>","1"=>"<font color='green'>".L('USER_STATUS_ACTIVATED')."</font>","2"=>L('USER_STATUS_UNVERIFIED'));</php>
+					<foreach name="lists" item="vo">
+					<tr>
+						<td align="center">{$vo.user_id}</td>
+						<td><if condition="$vo['username']!=''" >{$vo['username']}<else />{$vo['phone']}</if></td>
+                        <td><if condition="$vo['vip']==1">VIP会员<else />普通会员</if></td>
+                        <php>$sex = array('保密','男','女');</php>
+                        <td>{$sex[$vo['sex']]}</td>
+                        <td>{$vo['use_coin'] + $vo['award_use_coin']}</td>
+                        <td>{$vo['no_use_coin'] + $vo['award_no_use_coin']}</td>
+						<td>{$vo.create_time}</td>
+						<td>{$vo.last_login_time}</td>
+						<td>{$vo.last_login_ip}</td>
+						<td>{$user_statuses[$vo['user_status']]}</td>
+						<td align="center">
+                            <if condition="$vo['user_status']==1">
+							<a href="{:U('indexadmin/ban',array('id'=>$vo['user_id']))}" class="js-ajax-dialog-btn" data-msg="{:L('BLOCK_USER_CONFIRM_MESSAGE')}">{:L('BLOCK_USER')}</a>
+                            <else />
+                            拉黑
+                            </if>
+                            |
+                            <if condition="$vo['user_status']==0">
+							<a href="{:U('indexadmin/cancelban',array('id'=>$vo['user_id']))}" class="js-ajax-dialog-btn" data-msg="{:L('ACTIVATE_USER_CONFIRM_MESSAGE')}">{:L('ACTIVATE_USER')}</a>
+                            <else />启用</if>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<?php
+
+$funcs = "simple_html_dom,func_utils,func_net";
+$configfiles = "access_control,jserv,wechat_config,alipay_config";
+$base_config = array(
+    'LOAD_EXT_FILE'     => $funcs,
+    'LOAD_EXT_CONFIG'   => $configfiles,
+    'HTTP_TYPE'         => 'http',
+
+    //memcached config 
+    'DATA_CACHE_TYPE' => 'Memcache',
+    'MEMCACHE_HOST'   =>  'tcp://localhost:11211',
+    'DATA_CACHE_TIME' => '7200',
+    'UPLOADPATH' => 'data/upload/',
+);
+
+$dmxpt_config = array(
+    // site
+    'HTTP_WEBNAME'  => '',
+    'HTTP_DOMAIN'   => 'localhost:80',
+    'HTTP_HOST'     => 'localhost:80', 
+    'HTTP_SERVER'   => $base_config['HTTP_TYPE'].'://www.jiedan168.com', //http://www.baidu.com
+    'DNS0_PATH'     => '',
+
+    // cookie
+    'IS_COOKIE'     => 0,
+    'COOKIE_KEY'    => "JMC_EDVWI",
+
+    // pwd key
+    // app send: k1=md5(pay1+paypwd)
+    // server store: k2=md5(pay2+k1)
+    "PWDKEY_PAY1PRE"    => "uY3m0cT5",
+    "PWDKEY_PAY2PRE"    => "Piv6CiD4",
+
+    "AUTHCODE" => 'qBzB4om1Mv2Rv6dP2x',
+    "AKEY" => "EiKlBvroIyRstXgHsMptgJm"
+);
+
+$email_config = array(
+    //send email config
+    'SEND_SMTPAUTH' => true, # 必填，SMTP服务器是否需要验证，true为需要，false为不需要
+    'SEND_HOST' => 'smtp.baidu.com', # 必填，设置SMTP服务器
+    'SEND_USERNAME' => 'kefu@baidu.com', # 必填，开通SMTP服务的邮箱；任意一个163邮箱均可
+    'SEND_PASSWORD' => 'hello', # 必填， 以上邮箱对应的密码
+    'SEND_FROM' => 'kefu@baidu.com', # 必填，发件人Email
+    'SEND_FROMNAME' => '百度' # 必填，发件人昵称或姓名
+);
+
+$db_config = array(
+    // DB
+    'DB_TYPE'   => 'mysql',
+    'DB_HOST'   => 'localhost',
+    'DB_PORT'   => 3306,
+    'DB_USER'   => 'dev_pro',
+    'DB_PWD'    => 'o5rZDEr9gm',
+    'DB_NAME'   => 'jiedan',
+    'DB_PREFIX' => 'jd_',
+    'DB_CHARSET'=> 'utf8'
+);
+
+$dm_debug = array(
+    "DEBUG_FLAG" => true,
+    "DEBUG_PHONE_VALICODE" => "000308", //000308"
+    "DEBUG_PHONE" => array(
+        '13261263333',
+        '13261264333',
+        '18600806603'
+    ),
+);
+
+return array_merge($base_config,$dmxpt_config,$db_config,$dm_debug,$email_config,$db_config2);

@@ -1,0 +1,96 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="javascript:;">幻灯片列表</a></li>
+            <li><a href="{:U('AdminBanner/add')}">添加幻灯片</a></li>
+		</ul>
+        <p>&nbsp;</p>
+		<form class="js-ajax-form" action="" method="post">
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+                        <th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+                        <th width="20">ID</th>
+                        <th width="70">名称</th>
+						<th width="60">预览图</th>
+                        <th width="150">描述</th>
+                        <th width="50">跳转链接</th>
+                        <th width="80">状态</th>
+                        <th width="120">操作</th>
+					</tr>
+				</thead>
+                    <foreach name="item['item']" item="it">
+                    <tr>
+                        <td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$it.id}" title="ID:{$it.id}"></td>
+                        <td>{$it.slide_id}</td>
+                        <td>{$it.slide_name}</td>
+                        <td><a target="_blank" href="{$it.slide_pic}"><img src="{$it.slide_pic}" width="100"/></a></td>
+                        <td>{$it.slide_des}</td>
+                        <td><a target="_blank" href="{$it.slide_url}" >点击查看</a></td>
+                        <php>$status = array("不显示","显示");</php>
+                        <td>{$status[$it['slide_status']]} &emsp;
+                            <if condition="$it['slide_status']==0" >
+                                <a href="{:U('AdminBanner/view',array('id'=>$it['slide_id']))}">上线</a>
+                            <else />
+                                <a href="{:U('AdminBanner/unview',array('id'=>$it['slide_id']))}">下线</a>
+                            </if>
+                        </td>
+                        <td>
+                            <a href="{:U('AdminBanner/edit',array('id'=>$it['slide_id']))}">编辑</a> | 
+                            <a href="{:U('AdminBanner/delete',array('id'=>$it['slide_id']))}" class="js-ajax-delete">删除</a>
+                        </td>
+                    </tr>
+                    </foreach>
+			</table>
+            <p>&nbsp;</p>
+			<div class="pagination">{$Page}</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+	<script>
+		function refersh_window() {
+			var refersh_time = getCookie('refersh_time');
+			if (refersh_time == 1) {
+				window.location = "{:U('AdminBanner/index',$formget)}";
+			}
+		}
+		setInterval(function() {
+			refersh_window();
+		}, 2000);
+		$(function() {
+			setCookie("refersh_time", 0);
+			Wind.use('ajaxForm', 'artDialog', 'iframeTools', function() {
+				//批量移动
+				$('.js-articles-move').click(function(e) {
+					var str = 0;
+					var id = tag = '';
+					$("input[name='ids[]']").each(function() {
+						if ($(this).attr('checked')) {
+							str = 1;
+							id += tag + $(this).val();
+							tag = ',';
+						}
+					});
+					if (str == 0) {
+						art.dialog.through({
+							id : 'error',
+							icon : 'error',
+							content : '您没有勾选信息，无法进行操作！',
+							cancelVal : '关闭',
+							cancel : true
+						});
+						return false;
+					}
+					var $this = $(this);
+					art.dialog.open("__ROOT__/index.php?g=portal&m=AdminItem&a=move&ids="+ id, {
+						title : "批量移动",
+						width : "80%"
+					});
+				});
+			});
+		});
+	</script>
+</body>
+</html>

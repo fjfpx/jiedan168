@@ -719,7 +719,7 @@ class AdminLoanController extends AdminbaseController {
                 ->join("LEFT JOIN __MEMBER_BASE__ mb ON mb.uid=l.uid")
                 ->join("LEFT JOIN __MEMBER__ m ON m.user_id=l.uid")
                 ->join("LEFT JOIN __USERS__ u ON u.id=l.adduid")
-                ->where(array('l.id'=>$id,'l.verify_status'=>0))
+                ->where(array('l.id'=>$id))
                 ->field("l.*,mb.real_name,m.phone,u.user_login")
                 ->find();
             if(!$ck){

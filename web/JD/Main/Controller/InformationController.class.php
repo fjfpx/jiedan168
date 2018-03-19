@@ -58,7 +58,7 @@ class InformationController extends BaseController {
                 $this->jret['msg'] = '请先认证身份证正面照';
             }
         }else{
-            $this->jret['msg'] = '身份证照不能为空,请先上传身份证照';
+            $this->jret['msg'] = '身份证照不能为空,请先上传身份证照!';
         }
         file_put_contents(C('PATH_LOG_OCR'),time().json_encode($rst).PHP_EOL, FILE_APPEND);
         if($rst){

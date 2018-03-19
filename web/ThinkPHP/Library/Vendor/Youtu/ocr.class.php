@@ -52,7 +52,7 @@ class ocr{
                 $jret['msg'] = '识别成功';
                 logging('身份证OCR识别成功: '.json_encode($rst['result_list'][0]['data']) ,'PATH_LOG_OCR');
             }else{
-                $jret['msg'] = '识别失败, 请确认图片是否为身份证正面或反面,并保证照片无反光或完整';
+                $jret['msg'] = '识别失败, 请确认图片是否为身份证正面或反面,并保证照片无反光或完整！';
                 logging('身份证OCR识别失败: '.json_encode($rst) ,'PATH_LOG_OCR');
             }
         }

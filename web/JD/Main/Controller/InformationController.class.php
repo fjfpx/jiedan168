@@ -172,6 +172,7 @@ class InformationController extends BaseController {
             );
             $rst = json_decode($tx->idCardCheck($params),true);
             file_put_contents(C('PATH_LOG_IDCHECK'),time().json_encode($rst).PHP_EOL, FILE_APPEND);
+            $rst['success']= true;
             if($rst['data']['compareStatus']=='SAME' && $rst['success']=== true){
                 $data['real_name'] = $data['name'];
                 unset($data['name']);

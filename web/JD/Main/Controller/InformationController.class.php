@@ -67,8 +67,7 @@ class InformationController extends BaseController {
         }else{
             $this->jret['msg'] = '识别失败, 请确认图片是否为身份证正面或反面,并保证照片无反光或完整';
         }
-//         $this->jret['flag'] = 1;
-//         $this->jret['result'] = $rst['data'];
+
         $this->ajaxReturn($this->jret);
     }
 

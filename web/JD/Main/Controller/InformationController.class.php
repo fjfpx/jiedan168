@@ -61,8 +61,12 @@ class InformationController extends BaseController {
             $this->jret['msg'] = '身份证照不能为空,请先上传身份证照';
         }
         file_put_contents(C('PATH_LOG_OCR'),time().json_encode($rst).PHP_EOL, FILE_APPEND);
-        $this->jret['flag'] = 1;
+        if($rst && $rst['status']==1){
+            $this->jret['flag'] = 1;
             $this->jret['result'] = $rst['data'];
+        }else{
+            $this->jret['msg'] = '识别失败, 请确认图片是否为身份证正面或反面,并保证照片无反光或完整。';
+        }
 
         $this->ajaxReturn($this->jret);
     }
@@ -168,7 +172,6 @@ class InformationController extends BaseController {
             );
             $rst = json_decode($tx->idCardCheck($params),true);
             file_put_contents(C('PATH_LOG_IDCHECK'),time().json_encode($rst).PHP_EOL, FILE_APPEND);
-            $rst['success']= true;
             if($rst['data']['compareStatus']=='SAME' && $rst['success']=== true){
                 $data['real_name'] = $data['name'];
                 unset($data['name']);

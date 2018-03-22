@@ -29,26 +29,17 @@ class ocr{
                         'address' => $rst['result_list'][0]['data']['address'],
                         'uid' => $uid,
                     );
-                    if( M("MemberIdcardinfo")->where(array('uid'=>$uid))->save($data) ){
-                        $jret['status'] = 1;
-                        $jret['data'] = $data;
-                        unset($data['uid']);
-
-                        $result = true;
-                    }
+                    M("MemberIdcardinfo")->where(array('uid'=>$uid))->save($data);
+                    unset($data['uid']);
                 }else{
                     $data = array(
                         'authority' => $rst['result_list'][0]['data']['authority'],
                         'valid_date' => $rst['result_list'][0]['data']['valid_date']
                     );
-                    if( M("MemberIdcardinfo")->where(array('uid'=>$uid))->save($data)!==false ){
-                        $jret['status'] = 1;
-                        $jret['data'] = $data;
-
-                        $result = true;
-                    }
+                    M("MemberIdcardinfo")->where(array('uid'=>$uid))->save($data);
                 }
-
+                $jret['status'] = 1;
+                $jret['data'] = $data;
                 $jret['msg'] = '识别成功';
                 logging('身份证OCR识别成功: '.json_encode($rst['result_list'][0]['data']) ,'PATH_LOG_OCR');
             }else{

@@ -1,0 +1,24 @@
+[ 2018-03-20T23:50:03+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-20T23:50:08+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=2
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-20T23:50:20+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=3
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-20T23:50:28+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=2
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-20T23:50:35+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-20T23:50:44+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=2
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-20T23:50:47+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=index&menuid=206&p=3
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-03-20T23:54:48+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLists&a=index&menuid=175
+NOTIC: D方法实例化没找到模型类Common\Model\ProductModel
+

@@ -62,8 +62,17 @@ class InformationController extends BaseController {
         }
         file_put_contents(C('PATH_LOG_OCR'),time().json_encode($rst).PHP_EOL, FILE_APPEND);
         if($rst && $rst['status']==1){
-            $this->jret['flag'] = 1;
-            $this->jret['result'] = $rst['data'];
+        $this->jret['flag'] = 1;
+            $this->jret['result'] = array(
+                'name' => $rst['data']['name']?$rst['data']['name']:'未知',
+                'idcard' => $rst['data']['idcard']?$rst['data']['idcard']:'未知',
+                'sex' => $rst['data']['sex']?$rst['data']['sex']:'未知',
+                'nation' => $rst['data']['nation']?$rst['data']['nation']:'未知',
+                'birth' => $rst['data']['birth']?$rst['data']['birth']:'未知',
+                'address' => $rst['data']['address']?$rst['data']['address']:'未知',
+                'authority' => $rst['data']['authority']?$rst['data']['authority']:'未知',
+                'valid_date' => $rst['data']['valid_date']?$rst['data']['valid_date']:'未知',
+            );//$rst['data'];
         }else{
             $this->jret['msg'] = '识别失败, 请确认图片是否为身份证正面或反面,并保证照片无反光或完整';
         }
@@ -119,17 +128,17 @@ class InformationController extends BaseController {
             $bankname = trim($_POST['bankname']);
             //$branch = trim($_POST['branch']);
             if(isset($bankPreMobile) && $bankPreMobile!='' && isset($accountNO) && $accountNO!=''){
-                $tx = new \Main\Lib\TxClass();
-                $mb = M("MemberBase")->where(array('uid'=>$this->user_result['user_id']))->field("real_name,idcard")->find();
-                $params = array(
-                    'name' => $mb['real_name'],
-                    'accountNO' => $accountNO,
-                    'idCard' => $mb['idcard'],
-                    'bankPreMobile' => $bankPreMobile
-                );
-                $rst = json_decode($tx->check4element($params),true);
-                file_put_contents(C('PATH_LOG_BANK'),json_encode($params).'=>result=>'.json_encode($rst).PHP_EOL, FILE_APPEND);
-                if($rst['data']['checkStatus']=='SAME' && $rst['success']==1){
+                //$tx = new \Main\Lib\TxClass();
+                //$mb = M("MemberBase")->where(array('uid'=>$this->user_result['user_id']))->field("real_name,idcard")->find();
+                //$params = array(
+                //    'name' => $mb['real_name'],
+                //    'accountNO' => $accountNO,
+                //    'idCard' => $mb['idcard'],
+                //    'bankPreMobile' => $bankPreMobile
+                //);
+                //$rst = json_decode($tx->check4element($params),true);
+                //file_put_contents(C('PATH_LOG_BANK'),json_encode($params).'=>result=>'.json_encode($rst).PHP_EOL, FILE_APPEND);
+                //if($rst['data']['checkStatus']=='SAME' && $rst['success']==1){
                     $data = array(
                         'card' => $accountNO,
                         'bankname' => $bankname,
@@ -140,10 +149,11 @@ class InformationController extends BaseController {
                     if( M("MemberBank")->where(array('uid'=>$this->user_result['user_id']))->save($data)!==false ){
                         $this->jret['flag'] = 1;
                     }
-                    $this->jret['msg'] = $rst['data']['result'];
-                }else{
-                    $this->jret['msg'] = '银行卡鉴定失败';
-                }
+                    //$this->jret['msg'] = $rst['data']['result'];
+                    $this->jret['msg'] = '鉴定成功';
+                //}else{
+                //    $this->jret['msg'] = '银行卡鉴定失败';
+                //}
             }
         }
         $this->ajaxReturn($this->jret);
@@ -164,14 +174,14 @@ class InformationController extends BaseController {
         }elseif(!isset($data['behind_pic'])){
             $this->jret['msg'] = '身份证反面照不能为空';
         }else{
-            $tx = new \Main\Lib\TxClass();
-            $params = array(
-                'name' => $data['name'],
-                'idCard' => $data['idcard'],
-            );
-            $rst = json_decode($tx->idCardCheck($params),true);
-            file_put_contents(C('PATH_LOG_IDCHECK'),time().json_encode($rst).PHP_EOL, FILE_APPEND);
-            if($rst['data']['compareStatus']=='SAME' && $rst['success']=== true){
+            //$tx = new \Main\Lib\TxClass();
+            //$params = array(
+            //    'name' => $data['name'],
+            //    'idCard' => $data['idcard'],
+            //);
+            //$rst = json_decode($tx->idCardCheck($params),true);
+            //file_put_contents(C('PATH_LOG_IDCHECK'),time().json_encode($rst).PHP_EOL, FILE_APPEND);
+            //if($rst['data']['compareStatus']=='SAME' && $rst['success']=== true){
                 $data['real_name'] = $data['name'];
                 unset($data['name']);
                 $data['real_status'] = 1;
@@ -179,10 +189,11 @@ class InformationController extends BaseController {
                 if(M("MemberBase")->where(array('uid'=>$this->user_result['user_id']))->save($data)!==false){
                     $this->jret['flag'] = 1;
                 }
-                $this->jret['msg'] = $rst['data']['compareStatusDesc'];
-            }else{
-                $this->jret['msg'] = '验证失败,请重试';
-            }
+                //$this->jret['msg'] = $rst['data']['compareStatusDesc'];
+                $this->jret['msg'] = '验证成功';
+            //}else{
+            //    $this->jret['msg'] = '验证失败,请重试';
+            //}
         }
         $this->ajaxReturn($this->jret);
     }

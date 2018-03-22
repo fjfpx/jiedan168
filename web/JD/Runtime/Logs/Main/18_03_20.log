@@ -1,0 +1,600 @@
+[ 2018-03-20T23:21:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004323s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004580s ]
+
+[ 2018-03-20T23:21:01+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+
+[ 2018-03-20T23:21:01+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+
+[ 2018-03-20T23:21:01+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2018-03-20T23:21:01+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+
+[ 2018-03-20T23:21:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+
+[ 2018-03-20T23:22:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+
+[ 2018-03-20T23:22:16+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+
+[ 2018-03-20T23:23:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2018-03-20T23:23:37+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2018-03-20T23:24:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2018-03-20T23:24:01+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+
+[ 2018-03-20T23:24:01+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2018-03-20T23:24:01+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2018-03-20T23:24:01+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006845s ]
+
+[ 2018-03-20T23:24:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+
+[ 2018-03-20T23:24:06+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2018-03-20T23:24:07+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+
+[ 2018-03-20T23:24:07+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2018-03-20T23:24:08+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+
+[ 2018-03-20T23:24:09+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+
+[ 2018-03-20T23:24:10+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+
+[ 2018-03-20T23:25:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+
+[ 2018-03-20T23:26:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2018-03-20T23:27:02+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+
+[ 2018-03-20T23:27:02+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-03-20T23:27:02+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+
+[ 2018-03-20T23:27:02+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+
+[ 2018-03-20T23:27:02+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009402s ]
+
+[ 2018-03-20T23:27:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006362s ]
+
+[ 2018-03-20T23:28:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+
+[ 2018-03-20T23:29:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2018-03-20T23:30:02+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2018-03-20T23:30:02+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2018-03-20T23:30:02+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2018-03-20T23:30:02+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2018-03-20T23:30:02+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+
+[ 2018-03-20T23:30:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-03-20T23:31:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+
+[ 2018-03-20T23:32:02+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+
+[ 2018-03-20T23:32:22+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2018-03-20T23:32:41+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
+[ 2018-03-20T23:32:42+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+
+[ 2018-03-20T23:33:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009390s ]
+
+[ 2018-03-20T23:33:01+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+
+[ 2018-03-20T23:33:01+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2018-03-20T23:33:01+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2018-03-20T23:33:01+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+
+[ 2018-03-20T23:33:01+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2018-03-20T23:33:12+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+
+[ 2018-03-20T23:33:55+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+
+[ 2018-03-20T23:34:02+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-03-20T23:34:43+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2018-03-20T23:35:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2018-03-20T23:35:21+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+
+[ 2018-03-20T23:36:01+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005746s ]
+
+[ 2018-03-20T23:36:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2018-03-20T23:36:01+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+
+[ 2018-03-20T23:36:01+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+
+[ 2018-03-20T23:36:01+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012328s ]
+
+[ 2018-03-20T23:36:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+
+[ 2018-03-20T23:37:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+
+[ 2018-03-20T23:38:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+
+[ 2018-03-20T23:39:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2018-03-20T23:39:01+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2018-03-20T23:39:01+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+
+[ 2018-03-20T23:39:01+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+
+[ 2018-03-20T23:39:01+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2018-03-20T23:39:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2018-03-20T23:40:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2018-03-20T23:41:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+
+[ 2018-03-20T23:42:02+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+
+[ 2018-03-20T23:42:02+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2018-03-20T23:42:02+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2018-03-20T23:42:02+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2018-03-20T23:42:02+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2018-03-20T23:42:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2018-03-20T23:43:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+
+[ 2018-03-20T23:44:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+
+[ 2018-03-20T23:44:08+08:00 ] 127.0.0.1 /Information/idCheck?ping_session=00acca6a42d8dd3547c3b2e3236b07c5cf0ff7d4&name=%E5%88%98%E6%99%93%E5%88%9A&idcard=350322198907187119&front_pic=https://www.jiedan168.com/data/upload/20180317/5aad36ce444dd.jpg&behind_pic=https://www.jiedan168.com/data/upload/20180317/5aad36df17d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+
+[ 2018-03-20T23:45:02+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+
+[ 2018-03-20T23:45:02+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2018-03-20T23:45:02+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+
+[ 2018-03-20T23:45:02+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2018-03-20T23:45:02+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011495s ]
+
+[ 2018-03-20T23:45:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+
+[ 2018-03-20T23:46:02+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+
+[ 2018-03-20T23:47:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2018-03-20T23:48:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015360s ]
+
+[ 2018-03-20T23:48:01+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2018-03-20T23:48:01+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+
+[ 2018-03-20T23:48:01+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2018-03-20T23:48:01+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019330s ]
+
+[ 2018-03-20T23:48:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+
+[ 2018-03-20T23:49:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2018-03-20T23:50:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2018-03-20T23:51:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2018-03-20T23:51:01+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.016388s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016661s ]
+
+[ 2018-03-20T23:51:01+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2018-03-20T23:51:01+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+
+[ 2018-03-20T23:51:01+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+
+[ 2018-03-20T23:51:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-03-20T23:52:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+
+[ 2018-03-20T23:53:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2018-03-20T23:54:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012301s ]
+
+[ 2018-03-20T23:54:01+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003528s ]
+
+[ 2018-03-20T23:54:01+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2018-03-20T23:54:01+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2018-03-20T23:54:01+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2018-03-20T23:54:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+
+[ 2018-03-20T23:55:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-03-20T23:56:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2018-03-20T23:57:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+
+[ 2018-03-20T23:57:02+08:00 ] 127.0.0.1 /cb/getAlipayData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005335s ]
+
+[ 2018-03-20T23:57:02+08:00 ] 127.0.0.1 /cb/getTaobaoData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2018-03-20T23:57:02+08:00 ] 127.0.0.1 /cb/negative
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2018-03-20T23:57:02+08:00 ] 127.0.0.1 /cb/brokePromise
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2018-03-20T23:57:02+08:00 ] 127.0.0.1 /cb/getReportData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2018-03-20T23:58:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+
+[ 2018-03-20T23:59:01+08:00 ] 127.0.0.1 /cb/verifyMoxie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+

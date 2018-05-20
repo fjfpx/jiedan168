@@ -10,7 +10,7 @@ class AdminLoanController extends AdminbaseController {
         $this->loan_obj = D("Common/Loan");
         $this->user_result = $this->get("admin");
     }
-
+  
     public function detail(){
         $id = trim(I('id'));
         $op = I("op");
@@ -389,6 +389,40 @@ class AdminLoanController extends AdminbaseController {
     }
 
     public function topay(){
+		
+		
+	//	
+//	$verify_user = M("moxie")->where(array('datainfo'=>''))->select();
+//	
+//	//print_r($verify_user);
+//	
+//	
+//	//exit;
+//  foreach($verify_user as &$v){
+// 
+// 
+//	
+//	
+//	 $url = 'https://tenant.51datakey.com/carrier/report_data?data='.$v['report_message'];
+//                    $html = file_get_contents($url);
+//					
+//                    $info = preg_replace('/style=" float: right ;margin-top: 6px ;margin-right: 5px"/i','style="display:none"',$html);
+//					
+//                    $report = array(
+//                        'datainfo' => base64_encode($info),
+//                        'id' => $v['id']
+//                    );
+//					
+//                    M("Moxie")->save($report);
+//					
+//	
+//  }
+//  
+//  exit;
+	
+	
+	
+		
         $where_ands = array('l.verify_status'=>1,'l.status'=>0);
 
         $fields=array(

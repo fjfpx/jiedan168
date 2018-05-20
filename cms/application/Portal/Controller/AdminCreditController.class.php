@@ -12,7 +12,7 @@ class AdminCreditController extends AdminbaseController {
     }
 
     public function info(){
-        $uid = trim(I('uid'));
+       $uid = trim(I('uid'));
         if(isset($uid) && $uid!=''){
             $ck = $this->member_obj->alias("m")
                 ->join("LEFT JOIN __MEMBER_BASE__ mb ON mb.uid=m.user_id")

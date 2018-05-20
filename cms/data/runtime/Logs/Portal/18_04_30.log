@@ -1,0 +1,282 @@
+[ 2018-04-30T21:38:39+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-04-30T21:40:03+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=add&menuid=207
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-04-30T21:41:31+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `jd_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `jd_users` WHERE ( id=34 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM jd_role_user a INNER JOIN jd_role as b on a.role_id =b.id  WHERE `user_id` = '34' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jd_auth_access` [ RunTime:0.0005s ]
+SQL: SELECT * FROM jd_auth_access a INNER JOIN jd_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('6','5','3') AND b.name IN ('portal/adminloan/add_post')  [ RunTime:0.0007s ]
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+SQL: SHOW COLUMNS FROM `jd_loan` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `jd_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jd_member` WHERE `user_id` = '1243' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: validate /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /global/www/cms/simplewind/Core/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `jd_loan` (`uid`,`contract`,`borrowing_time`,`borrowing_days`,`borrowing_money`,`borrowing_poundage`,`borrowing_actual_money`,`borrowing_rate`,`borrowing_end_time`,`borrowing_repay`,`addtime`,`adduid`) VALUES ('1243','1','1525095600','5','700','200','500','200','1522771200','700','1525095691','34') [ RunTime:0.0069s ]
+NOTIC: [2] Missing argument 2 for Common\Controller\AdminbaseController::logs(), called in /global/www/cms/application/Portal/Controller/AdminLoanController.class.php on line 698 and defined /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 203 行.
+NOTIC: [8] Undefined variable: bid /global/www/cms/application/Common/Controller/AdminbaseController.class.php 第 210 行.
+SQL: SHOW COLUMNS FROM `jd_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `jd_log` (`type`,`uid`,`bid`,`content`,`addtime`) VALUES ('0','34','0','添加借款人ID为{500},合同编号为{1}的贷款成功','1525095691') [ RunTime:0.0009s ]
+
+[ 2018-04-30T21:41:33+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-04-30T21:42:34+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-table-expandable.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-responsive.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /assets/styles.css
+ERR: 无法加载控制器:Assets
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /vendors/jquery-1.9.1.min.js
+ERR: 无法加载控制器:Vendors
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /bootstrap/css/bootstrap-datetimepicker.min.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-datetimepicker.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /bootstrap/js/bootstrap-table-expandable.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-04-30T21:42:49+08:00 ] 127.0.0.1 /bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2018-04-30T21:42:50+08:00 ] 127.0.0.1 /assets/scripts.js
+ERR: 无法加载控制器:Assets
+
+[ 2018-04-30T21:42:50+08:00 ] 127.0.0.1 /moxie/js/mx.js
+ERR: 无法加载控制器:Moxie
+
+[ 2018-04-30T21:43:01+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-04-30T21:43:05+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=500
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-04-30T21:44:32+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminLoan&a=toverify&menuid=247
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-04-30T21:44:56+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status&id=500
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-04-30T21:44:59+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=verify_status_p&id=500&status=1
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-04-30T21:45:03+08:00 ] 127.0.0.1 /index.php?g=&m=AdminLoan&a=toverify
+NOTIC: D方法实例化没找到模型类Common\Model\LoanModel
+
+[ 2018-04-30T23:03:17+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminMessage&a=checkindex&menuid=231
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageModel
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageUsersModel
+NOTIC: D方法实例化没找到模型类Portal\Model\AccountModel
+
+[ 2018-04-30T23:03:17+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminMessage&a=index&menuid=232
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageModel
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageUsersModel
+NOTIC: D方法实例化没找到模型类Portal\Model\AccountModel
+
+[ 2018-04-30T23:03:18+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminMessage&a=checkindex&menuid=231
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageModel
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageUsersModel
+NOTIC: D方法实例化没找到模型类Portal\Model\AccountModel
+
+[ 2018-04-30T23:03:21+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminMessage&a=checkindex&menuid=231
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageModel
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageUsersModel
+NOTIC: D方法实例化没找到模型类Portal\Model\AccountModel
+
+[ 2018-04-30T23:03:22+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminMessage&a=checkindex&menuid=231
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageModel
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageUsersModel
+NOTIC: D方法实例化没找到模型类Portal\Model\AccountModel
+
+[ 2018-04-30T23:03:22+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminMessage&a=checkindex&menuid=231
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageModel
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageUsersModel
+NOTIC: D方法实例化没找到模型类Portal\Model\AccountModel
+
+[ 2018-04-30T23:03:23+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminMessage&a=checkindex&menuid=231
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageModel
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageUsersModel
+NOTIC: D方法实例化没找到模型类Portal\Model\AccountModel
+
+[ 2018-04-30T23:03:24+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminMessage&a=index&menuid=232
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageModel
+NOTIC: D方法实例化没找到模型类Portal\Model\MessageUsersModel
+NOTIC: D方法实例化没找到模型类Portal\Model\AccountModel
+
+[ 2018-04-30T23:03:33+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=index&menuid=214
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2018-04-30T23:21:58+08:00 ] 127.0.0.1 /wls-wsat/CoordinatorPortType
+ERR: 无法加载控制器:Wls-wsat
+
+[ 2018-04-30T23:21:58+08:00 ] 127.0.0.1 /phpmyadmin/index.php
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-04-30T23:21:59+08:00 ] 127.0.0.1 /phpMyAdmin/index.php
+ERR: 无法加载控制器:PhpMyAdmin
+
+[ 2018-04-30T23:21:59+08:00 ] 127.0.0.1 /pmd/index.php
+ERR: 无法加载控制器:Pmd
+
+[ 2018-04-30T23:22:00+08:00 ] 127.0.0.1 /pma/index.php
+ERR: 无法加载控制器:Pma
+
+[ 2018-04-30T23:22:00+08:00 ] 127.0.0.1 /PMA/index.php
+ERR: 无法加载控制器:PMA
+
+[ 2018-04-30T23:22:01+08:00 ] 127.0.0.1 /PMA2/index.php
+ERR: 无法加载控制器:PMA2
+
+[ 2018-04-30T23:22:01+08:00 ] 127.0.0.1 /pmamy/index.php
+ERR: 无法加载控制器:Pmamy
+
+[ 2018-04-30T23:22:01+08:00 ] 127.0.0.1 /pmamy2/index.php
+ERR: 无法加载控制器:Pmamy2
+
+[ 2018-04-30T23:22:02+08:00 ] 127.0.0.1 /mysql/index.php
+ERR: 无法加载控制器:Mysql
+
+[ 2018-04-30T23:22:03+08:00 ] 127.0.0.1 /db/index.php
+ERR: 无法加载控制器:Db
+
+[ 2018-04-30T23:22:03+08:00 ] 127.0.0.1 /dbadmin/index.php
+ERR: 无法加载控制器:Dbadmin
+
+[ 2018-04-30T23:22:03+08:00 ] 127.0.0.1 /web/phpMyAdmin/index.php
+ERR: 无法加载控制器:Web
+
+[ 2018-04-30T23:22:08+08:00 ] 127.0.0.1 /mysqladmin/index.php
+ERR: 无法加载控制器:Mysqladmin
+
+[ 2018-04-30T23:22:08+08:00 ] 127.0.0.1 /mysql-admin/index.php
+ERR: 无法加载控制器:Mysql-admin
+
+[ 2018-04-30T23:22:09+08:00 ] 127.0.0.1 /phpadmin/index.php
+ERR: 无法加载控制器:Phpadmin
+
+[ 2018-04-30T23:22:09+08:00 ] 127.0.0.1 /phpmyadmin0/index.php
+ERR: 无法加载控制器:Phpmyadmin0
+
+[ 2018-04-30T23:22:10+08:00 ] 127.0.0.1 /phpmyadmin1/index.php
+ERR: 无法加载控制器:Phpmyadmin1
+
+[ 2018-04-30T23:22:10+08:00 ] 127.0.0.1 /phpmyadmin2/index.php
+ERR: 无法加载控制器:Phpmyadmin2
+
+[ 2018-04-30T23:22:11+08:00 ] 127.0.0.1 /myadmin/index.php
+ERR: 无法加载控制器:Myadmin
+
+[ 2018-04-30T23:22:12+08:00 ] 127.0.0.1 /myadmin2/index.php
+ERR: 无法加载控制器:Myadmin2
+
+[ 2018-04-30T23:22:12+08:00 ] 127.0.0.1 /xampp/phpmyadmin/index.php
+ERR: 无法加载控制器:Xampp
+
+[ 2018-04-30T23:22:13+08:00 ] 127.0.0.1 /phpMyadmin_bak/index.php
+ERR: 无法加载控制器:PhpMyadmin_bak
+
+[ 2018-04-30T23:22:14+08:00 ] 127.0.0.1 /www/phpMyAdmin/index.php
+ERR: 无法加载控制器:Www
+
+[ 2018-04-30T23:22:15+08:00 ] 127.0.0.1 /tools/phpMyAdmin/index.php
+ERR: 无法加载控制器:Tools
+
+[ 2018-04-30T23:22:15+08:00 ] 127.0.0.1 /phpmyadmin-old/index.php
+ERR: 无法加载控制器:Phpmyadmin-old
+
+[ 2018-04-30T23:22:16+08:00 ] 127.0.0.1 /phpMyAdminold/index.php
+ERR: 无法加载控制器:PhpMyAdminold
+
+[ 2018-04-30T23:22:16+08:00 ] 127.0.0.1 /pma-old/index.php
+ERR: 无法加载控制器:Pma-old
+
+[ 2018-04-30T23:22:17+08:00 ] 127.0.0.1 /claroline/phpMyAdmin/index.php
+ERR: 无法加载控制器:Claroline
+
+[ 2018-04-30T23:22:17+08:00 ] 127.0.0.1 /typo3/phpmyadmin/index.php
+ERR: 无法加载控制器:Typo3
+
+[ 2018-04-30T23:22:18+08:00 ] 127.0.0.1 /phpma/index.php
+ERR: 无法加载控制器:Phpma
+
+[ 2018-04-30T23:22:18+08:00 ] 127.0.0.1 /phpmyadmin/phpmyadmin/index.php
+ERR: 无法加载控制器:Phpmyadmin
+
+[ 2018-04-30T23:22:18+08:00 ] 127.0.0.1 /phpMyAdmin/phpMyAdmin/index.php
+ERR: 无法加载控制器:PhpMyAdmin
+

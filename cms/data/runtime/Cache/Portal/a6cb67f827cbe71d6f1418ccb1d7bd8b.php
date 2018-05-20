@@ -92,6 +92,8 @@ var GV = {
                         <td><?php echo ($status[$it['status']]); ?></td>
                         <td>
                             <a href="<?php echo U('AdminLoan/paying',array('id'=>$it['id']));?>">打款</a>
+                           <!-- <a href="<?php echo U('AdminLoan/toverify',array('id'=>$it['id']));?>">重新审核</a>-->
+                            <a href="<?php echo U('AdminLoan/toverify');?>">重新审核</a>
                         </td>
                     </tr><?php endforeach; endif; ?>
 			</table>

@@ -51,7 +51,8 @@ var GV = {
 			<li class="active"><a href="javascript:;">信用列表</a></li>
 		</ul>
 		<form class="well form-search" method="post" action="">
-            手机号: <input type="text" name="phone" class="input" value="<?php echo ($formget["phone"]); ?>" style="width:100px;"/>&nbsp;&nbsp;
+            姓名: <input type="text" name="real_name" class="input" value="<?php echo ($formget["real_name"]); ?>" style="width:100px;"/>&nbsp;&nbsp;
+             手机号: <input type="text" name="phone" class="input" value="<?php echo ($formget["phone"]); ?>" style="width:100px;"/>&nbsp;&nbsp;
             完成日期: <input type="text" name="ustart_time" class="js-date" value="<?php echo ($formget["ustart_time"]); ?>" style="width:80px;" autocomplete="off"/> - <input type="text" class="js-date" name="uend_time" value="<?php echo ($formget["uend_time"]); ?>" style="width: 80px;" autocomplete="off"> &nbsp; &nbsp;
 			<input type="submit" class="btn btn-primary" value="查询" />
 		</form>

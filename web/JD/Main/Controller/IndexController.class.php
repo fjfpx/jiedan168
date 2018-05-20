@@ -7,6 +7,8 @@ use Library\network;
 class IndexController extends BaseController {
 
     public function index(){
+		
+	  
         $this->ajaxReturn($this->jret);
     }
 

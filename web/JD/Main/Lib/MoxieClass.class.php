@@ -8,13 +8,13 @@ class MoxieClass{
 
     public function __construct($url = null, $appcode = null)
     {
-        $this->token = 'ff772e7bce694bd6826e507d38ab3dcb';
+       // $this->token = 'ff772e7bce694bd6826e507d38ab3dcb';
     }
 
     //运营商信息
     public function getCarrier($params){
         $url = 'https://api.51datakey.com/carrier/v3/mobiles/'.$params['phone'].'/mxdata-ex?task_id='.$params['task_id'];
-        return $this->httpGet($url);
+       // return $this->httpGet($url);
     }
 
     //淘宝信息

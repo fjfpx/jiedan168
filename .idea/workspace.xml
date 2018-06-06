@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f2c2be1-9c86-4bd5-bbbb-bbc7ef6d6ccc" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>token</find>
+      <find>ff772e7bce694bd6826e507d38ab3dcb</find>
+      <find>getReportData</find>
+      <find>$verify</find>
+      <find>phone_satatu</find>
+      <find>phone_status</find>
+      <find>__member_OPERATOR</find>
+      <find>member_operator</find>
+      <find>memberoperator</find>
+      <find>moxie_alipay</find>
+      <find>Route</find>
+      <find>phone_stat</find>
+      <find>config</find>
+      <find>$save</find>
+      <find>产品管理</find>
+      <find>menu_cache</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/cms/cms/application</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cms/cms/application/Portal/Controller/AdminLoanController.class.php" />
+        <option value="$PROJECT_DIR$/cms/cms/application/Portal/Controller/AdminCreditController.class.php" />
+        <option value="$PROJECT_DIR$/cms/application/Portal/Controller/AdminLoanController.class.php" />
+        <option value="$PROJECT_DIR$/cms/application/Portal/Controller/AdminCreditController.class.php" />
+        <option value="$PROJECT_DIR$/web/JD/Main/Controller/CbController.class.php" />
+        <option value="$PROJECT_DIR$/cms/cms/application/Common/Controller/AdminbaseController.class.php" />
+        <option value="$PROJECT_DIR$/cms/cms/tpl_admin/simpleboot/Admin/LoadMall/index.html" />
+        <option value="$PROJECT_DIR$/cms/cms/application/Admin/Controller/LoadMallController.class.php" />
+        <option value="$PROJECT_DIR$/cms/application/Portal/Controller/AdminListsController.class.php" />
+        <option value="$PROJECT_DIR$/cms/application/Admin/Controller/LoadMallController.class.php" />
+        <option value="$PROJECT_DIR$/cms/application/Admin/Lang/zh-cn/loanmall.php" />
+        <option value="$PROJECT_DIR$/cms/tpl_admin/simpleboot/Admin/LoanMall/index.html" />
+        <option value="$PROJECT_DIR$/cms/tpl_admin/simpleboot/Admin/LoanMall/add.html" />
+        <option value="$PROJECT_DIR$/cms/tpl_admin/simpleboot/Admin/LoanMall/edit.html" />
+        <option value="$PROJECT_DIR$/cms/application/Admin/Controller/LoanMallController.class.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="812" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jiedan168" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiedan168" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiedan168" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiedan168" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiedan168" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiedan168" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiedan168" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiedan168" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiedan168" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiedan168" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiedan168" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiedan168" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiedan168" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiedan168" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl_admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiedan168" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiedan168" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="simpleboot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiedan168" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiedan168" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="simpleboot" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="data/runtime/&#9;FILE&#9;file:///Users/litengfei/Desktop/项目/jiedan168/cms/data/runtime&#10;menu&#9;FILE&#9;file:///Users/litengfei/Desktop/项目/jiedan168/cms/application/Common/Model/MenuModel.class.php&#10;Menu.php&#9;FILE&#9;file:///Users/litengfei/Desktop/项目/jiedan168/cms/application/Common/Model/MenuModel.class.php&#10;Menu&#9;FILE&#9;file:///Users/litengfei/Desktop/项目/jiedan168/cms/data/runtime/Data/Menu.php&#10;AdminLoan&#9;FILE&#9;file:///Users/litengfei/Desktop/项目/jiedan168/cms/application/Portal/Controller/AdminLoanController.class.php&#10;AdminCredit&#9;FILE&#9;file:///Users/litengfei/Desktop/项目/jiedan168/cms/cms/application/Portal/Controller/AdminCreditController.class.php&#10;verify_credit&#9;FILE&#9;file:///Users/litengfei/Desktop/项目/jiedan168/cms/tpl_admin/simpleboot/Portal/AdminLoan/verify_credit.html" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cms/application/Admin/Controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f2c2be1-9c86-4bd5-bbbb-bbc7ef6d6ccc" name="Default" comment="" />
+      <created>1527031024113</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527031024113</updated>
+      <workItem from="1527031026500" duration="1221000" />
+      <workItem from="1527085120307" duration="11005000" />
+      <workItem from="1527238673347" duration="8859000" />
+      <workItem from="1528151396631" duration="2187000" />
+      <workItem from="1528162733684" duration="39000" />
+      <workItem from="1528201158788" duration="3474000" />
+      <workItem from="1528241204837" duration="1586000" />
+      <workItem from="1528269749528" duration="196000" />
+      <workItem from="1528269973464" duration="573000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="29332000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="812" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="PlantUML" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23402777" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Portal/Controller/AdminLoanController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Asset/Controller/UeditorController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Portal/Controller/AdminCreditController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Portal/Controller/AdminCreditController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Portal/Controller/AdminLoanController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/index.php" />
+    <entry file="file://$PROJECT_DIR$/web/index.php" />
+    <entry file="file://$PROJECT_DIR$/web/JD/Main/Controller/EmptyController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Portal/Conf/config.php" />
+    <entry file="file://$PROJECT_DIR$/web/JD/Main/Controller/UserController.class.php" />
+    <entry file="file://$PROJECT_DIR$/web/JD/Main/Lib/MoxieClass.class.php" />
+    <entry file="file://$PROJECT_DIR$/web/JD/Main/Controller/CbController.class.php" />
+    <entry file="file://$PROJECT_DIR$/web/ThinkPHP/Library/Vendor/Youtu/QcloudImage/CIClient.php" />
+    <entry file="file://$PROJECT_DIR$/web/ThinkPHP/Library/Vendor/Youtu/TencentYoutuyun/Auth.php" />
+    <entry file="file://$PROJECT_DIR$/web/JD/Main/Controller/TestController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/data/runtime/Data/Menu.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/data/conf/route.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/data/conf/db.php.default" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Portal/Lib/AccountClass.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Common/Controller/AdminbaseController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Admin/Menu/admin_content.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Common/Model/MenuModel.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Common/Model/MenuModel.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Common/Model/CommonModel.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Admin/Controller/LinkController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/tpl_admin/simpleboot/Admin/Index/index.html" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/tpl_admin/simpleboot/Admin/boot/index.html" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Common/Model/NavCatModel.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/tpl_admin/simpleboot/Admin/Ad/add.html" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/application/Admin/Controller/IndexController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/cms/tpl_admin/simpleboot/Admin/LoadMall/index.html" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Admin/Controller/LinkController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Admin/Controller/IndexController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Portal/Controller/AdminListsController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/index.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Admin/Conf/config.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Admin/Lang/zh-cn/ad.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Common/Controller/AdminbaseController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/data/conf/config.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Admin/Controller/AdController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Admin/Controller/MenuController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Admin/Controller/MailerController.class.php" />
+    <entry file="file://$PROJECT_DIR$/cms/tpl_admin/simpleboot/Admin/Ad/edit.html" />
+    <entry file="file://$PROJECT_DIR$/cms/tpl_admin/simpleboot/Admin/LoanMall/edit.html" />
+    <entry file="file://$PROJECT_DIR$/cms/data/conf/db.php" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Admin/Lang/zh-cn/loanmall.php" />
+    <entry file="file://$PROJECT_DIR$/cms/tpl_admin/simpleboot/Admin/Ad/add.html" />
+    <entry file="file://$PROJECT_DIR$/cms/tpl_admin/simpleboot/Admin/LoanMall/add.html" />
+    <entry file="file://$PROJECT_DIR$/cms/tpl_admin/simpleboot/Admin/LoanMall/index.html" />
+    <entry file="file://$PROJECT_DIR$/cms/tpl_admin/simpleboot/Admin/Ad/index.html" />
+    <entry file="file://$PROJECT_DIR$/cms/application/Admin/Controller/LoanMallController.class.php" />
+  </component>
+</project>

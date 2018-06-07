@@ -1,0 +1,57 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('loanmall/index')}">{:L('ADMIN_LOAN_INDEX')}</a></li>
+			<li><a href="{:U('loanmall/add')}">{:L('ADMIN_LOAN_ADD')}</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('loanmall/edit_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">{:L('NAME')}</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$ad_name}"><span class="form-required">*</span>
+						<input type="hidden" name="id" value="{$id}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('TYPE')}</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$name}"><span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('RATE')}</label>
+					<div class="controls">
+						<input type="text" name="rate" value="{$rate}"><span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('ORDER')}</label>
+					<div class="controls">
+						<input type="text" name="order" value="{$order}"><span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('LINK')}</label>
+					<div class="controls">
+						<input type="text" name="link" value="{$link}"><span class="form-required">*</span>
+					</div>
+				</div>
+                <div class="control-group">
+					<label class="control-label">{:L('ORDER')}</label>
+					<div class="controls">
+						<input type="text" name="order" value="{$order}"><span class="form-required">*</span>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('SAVE')}</button>
+				<a class="btn" href="{:U('ad/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

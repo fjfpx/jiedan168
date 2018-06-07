@@ -7,7 +7,7 @@ return array(
     'DB_HOST' => 'localhost',
     'DB_NAME' => 'jiedan',
     'DB_USER' => 'root',
-    'DB_PWD' => 'mp2Jg#o7Ehy',
+    'DB_PWD' => 'root',
     'DB_PORT' => '3306',
     'DB_PREFIX' => 'jd_',
     //密钥

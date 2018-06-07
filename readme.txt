@@ -1,6 +1,6 @@
 ssh root@119.29.240.141
 mp2Jg#o7Ehy
-
+12345
 数据库
 mysql -u root -p -S /coldata1/data/mysql/mysql.sock
 mp2Jg#o7Ehy

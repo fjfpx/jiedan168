@@ -3,28 +3,95 @@
 <body>
 	<div class="wrap">
 		<ul class="nav nav-tabs">
-			<li><a href="{:U('ad/index')}">{:L('ADMIN_AD_INDEX')}</a></li>
-			<li class="active"><a href="{:U('ad/add')}">{:L('ADMIN_AD_ADD')}</a></li>
+			<li><a href="{:U('LoanMall/index')}">{:L('ADMIN_AD_INDEX')}</a></li>
+			<li class="active"><a href="{:U('LoanMall/add')}">{:L('ADMIN_AD_ADD')}</a></li>
 		</ul>
-		<form method="post" class="form-horizontal js-ajax-form" action="{:U('ad/add_post')}">
+		<form method="post" enctype="multipart/form-data" class="form-horizontal js-ajax-form" action="{:U('LoanMall/add_post')}">
 			<fieldset>
 				<div class="control-group">
 					<label class="control-label">{:L('NAME')}</label>
 					<div class="controls">
-						<input type="text" name="ad_name">
+						<input type="text" name="name">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('LOGO')}</label>
+					<div class="controls">
+						<input type="file" name="logo">
 						<span class="form-required">*</span>
 					</div>
 				</div>
 				<div class="control-group">
 					<label class="control-label">{:L('TYPE')}</label>
 					<div class="controls">
-						<textarea name="ad_content" rows="5" cols="57"></textarea>
+						<input type="text" name="type">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('ED')}</label>
+					<div class="controls">
+						<input type="text" name="edu_start" style="width:60px;"/>-
+						<input type="text" name="edu_end" style="width:60px;"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('QX')}</label>
+					<div class="controls">
+						<input type="text" name="qixian_start" style="width:60px;"/>-
+						<input type="text" name="qixian_end" style="width:60px;"/>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label">{:L('RATE')}</label>
+					<div class="controls">
+						<input type="text" name="rate">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('ORDER')}</label>
+					<div class="controls">
+						<input type="text" name="order">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('LINK')}</label>
+					<div class="controls">
+						<input type="text" name="link">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('DESCR')}</label>
+					<div class="controls">
+						<input type="text" name="DESCR">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('HIGHLIGHT')}</label>
+					<div class="controls">
+						<input type="text" name="tags_highlight">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('TAGS')}</label>
+					<div class="controls">
+						<input type="text" name="tags">
+						<span class="form-required">*</span>
 					</div>
 				</div>
 			</fieldset>
 			<div class="form-actions">
 				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
-				<a class="btn" href="{:U('ad/index')}">{:L('BACK')}</a>
+				<a class="btn" href="{:U('LoanMall/index')}">{:L('BACK')}</a>
 			</div>
 		</form>
 	</div>

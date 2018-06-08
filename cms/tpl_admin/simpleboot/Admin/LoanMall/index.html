@@ -3,8 +3,8 @@
 <body>
 	<div class="wrap js-check-wrap">
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="{:U('loanmall/index')}">{:L('ADMIN_AD_INDEX')}</a></li>
-			<li><a href="{:U('loanmall/add')}">{:L('ADMIN_AD_ADD')}</a></li>
+			<li class="active"><a href="{:U('LoanMall/index')}">{:L('ADMIN_LOAN_MALL')}</a></li>
+			<li><a href="{:U('LoanMall/add')}">{:L('ADMIN_LOAN_MALL_ADD')}</a></li>
 		</ul>
 		<form method="post" class="js-ajax-form">
 			<div class="table-actions">
@@ -18,13 +18,13 @@
 						<th width="16"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
 						<th width="50">ID</th>
 						<th>{:L('NAME')}</th>
-						<th width="45">{:L('STATUS')}</th>
 						<th width="45">{:L('TYPE')}</th>
+						<th width="45">{:L('STATUS')}</th>
 						<th width="120">{:L('ACTIONS')}</th>
 					</tr>
 				</thead>
 				<tbody>
-					<foreach name="ads" item="vo">
+					<foreach name="daichao" item="vo">
 					<tr>
 						<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$vo.ad_id}"></td>
 						<td>{$vo.id}</td>
@@ -32,8 +32,8 @@
 						<td>{$vo.type}</td>
 						<td>{$vo.status}</td>
 						<td>
-							<a href="{:U('loanmall/edit',array('id'=>$vo['id']))}">{:L('EDIT')}</a> |
-							<a href="{:U('loanmall/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+							<a href="{:U('LoanMall/edit',array('id'=>$vo['id']))}">{:L('EDIT')}</a> |
+							<a href="{:U('LoanMall/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
 						</td>
 					</tr>
 					</foreach>

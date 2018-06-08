@@ -1,6 +1,6 @@
 <?php
 return array(
-    "NAME" => "广告名称",
+    "NAME" => "合作商名称",
     "TYPE" => "类型",
     "RATE" => "利率",
     "ORDER" => "合作优先级",
@@ -9,5 +9,8 @@ return array(
     "HIGHLIGHT" => "高亮关键字",
     "TAGS" => "普通标签",
     "CONDITION" => "申请条件",
-    "STATUS" => "状态"
+    "STATUS" => "状态",
+    "QX"=>"贷款期限",
+    "ED"=>"贷款额度",
+    "LOGO"=>"图标"
 );

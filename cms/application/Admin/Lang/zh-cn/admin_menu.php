@@ -116,7 +116,7 @@ return array(
     'ADMIN_USER_DELETE' => '删除管理员',
     'ADMIN_USER_EDIT' => '管理员编辑',
     'ADMIN_MENU_SPMY_IMPORT_MENU' => '导入菜单',
-    'ADMIN_LOAN_MALL' => '贷超管理',
+    'ADMIN_LOAN_MALL_INDEX' => '贷超管理',
     'ADMIN_LOAN_MALL_ADD'=>'贷超添加',
     'ADMIN_LOAN_MALL_EDIT'=>'贷超编辑',
     'ADMIN_LOAN_MALL_DEELTE'=>'贷超删除'

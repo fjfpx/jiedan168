@@ -1,57 +1,107 @@
-<admintpl file="header" />
+<admintpl file="header"/>
 </head>
 <body>
-	<div class="wrap">
-		<ul class="nav nav-tabs">
-			<li><a href="{:U('loanmall/index')}">{:L('ADMIN_LOAN_INDEX')}</a></li>
-			<li><a href="{:U('loanmall/add')}">{:L('ADMIN_LOAN_ADD')}</a></li>
-		</ul>
-		<form method="post" class="form-horizontal js-ajax-form" action="{:U('loanmall/edit_post')}">
-			<fieldset>
-				<div class="control-group">
-					<label class="control-label">{:L('NAME')}</label>
-					<div class="controls">
-						<input type="text" name="name" value="{$ad_name}"><span class="form-required">*</span>
-						<input type="hidden" name="id" value="{$id}">
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">{:L('TYPE')}</label>
-					<div class="controls">
-						<input type="text" name="name" value="{$name}"><span class="form-required">*</span>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">{:L('RATE')}</label>
-					<div class="controls">
-						<input type="text" name="rate" value="{$rate}"><span class="form-required">*</span>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">{:L('ORDER')}</label>
-					<div class="controls">
-						<input type="text" name="order" value="{$order}"><span class="form-required">*</span>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">{:L('LINK')}</label>
-					<div class="controls">
-						<input type="text" name="link" value="{$link}"><span class="form-required">*</span>
-					</div>
-				</div>
-                <div class="control-group">
-					<label class="control-label">{:L('ORDER')}</label>
-					<div class="controls">
-						<input type="text" name="order" value="{$order}"><span class="form-required">*</span>
-					</div>
-				</div>
-			</fieldset>
-			<div class="form-actions">
-				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('SAVE')}</button>
-				<a class="btn" href="{:U('ad/index')}">{:L('BACK')}</a>
-			</div>
-		</form>
-	</div>
-	<script src="__ROOT__/statics/js/common.js"></script>
+<div class="wrap">
+  <ul class="nav nav-tabs">
+    <li><a href="{:U('LoanMall/index')}">{:L('ADMIN_LOAN_MALL_INDEX')}</a></li>
+    <li class="active" ><a href="{:U('LoanMall/add')}">{:L('ADMIN_LOAN_MALL_EDIT')}</a></li>
+  </ul>
+  <form method="post" class="form-horizontal js-ajax-form" action="{:U('LoanMall/edit_post')}">
+    <fieldset>
+      <div class="control-group">
+        <label class="control-label">{:L('NAME')}</label>
+        <div class="controls">
+          <input type="text" name="name" value="{$loanmall.name}" />
+          <input type="hidden" name="id" value="{$loanmall.id}" />
+          <span class="form-required">*</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{:L('LOGO')}</label>
+        <div class="controls">
+          <input type="file" name="logo">
+          <span class="form-required">*</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label"></label>
+        <div class="controls">
+          <img style="width:200px;height:200px;" src="{$loanmall.logo}"/>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{:L('TYPE')}</label>
+        <div class="controls">
+          <input type="text" name="type" value="{$loanmall.type}">
+          <span class="form-required">*</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{:L('ED')}</label>
+        <div class="controls">
+          <input type="text" name="edu_start" value="{$loanmall.edu_start}" style="width:60px;"/>-
+          <input type="text" name="edu_end" value="{$loanmall.edu_end}" style="width:60px;"/>
+          <span class="form-required">*</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{:L('QX')}</label>
+        <div class="controls">
+          <input type="text" name="qixian_start" value="{$loanmall.qixian_start}" style="width:60px;"/>-
+          <input type="text" name="qixian_end" value="{$loanmall.qixian_end}" style="width:60px;"/>
+          <span class="form-required">*</span>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">{:L('RATE')}</label>
+        <div class="controls">
+          <input type="text" name="rate" value="{$loanmall.rate}" />
+          <span class="form-required">*</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{:L('ORDER')}</label>
+        <div class="controls">
+          <input type="text" name="order" value="{$loanmall.order}" />
+          <span class="form-required">*</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{:L('LINK')}</label>
+        <div class="controls">
+          <input type="text" name="link" value="{$loanmall.link}" />
+          <span class="form-required">*</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{:L('DESCR')}</label>
+        <div class="controls">
+          <input type="text" name="DESCR" value="{$loanmall.descr}" />
+          <span class="form-required">*</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{:L('HIGHLIGHT')}</label>
+        <div class="controls">
+          <input type="text" name="tags_highlight" value="{$loanmall.tags_highlight}" />
+          <span class="form-required">*</span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{:L('TAGS')}</label>
+        <div class="controls">
+          <input type="text" name="tags" value="{$loanmall.tags}" />
+          <span class="form-required">*</span>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary js-ajax-submit">{:L('SAVE')}</button>
+      <a class="btn" href="{:U('LoanMall/index')}">{:L('BACK')}</a>
+    </div>
+  </form>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
 </body>
 </html>

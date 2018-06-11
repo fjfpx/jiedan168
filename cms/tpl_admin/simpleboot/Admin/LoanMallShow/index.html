@@ -1,0 +1,68 @@
+<html lang="zh-cn">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>贷超列表</title>
+  <!-- import style -->
+  <link rel="stylesheet" href="https://unpkg.com/vant/lib/vant-css/index.css"/>
+</head>
+<body>
+<div id="app">
+  <van-list
+          v-model="loading"
+          :finished="finished"
+          @load="onLoad"
+  >
+    <a :href="item.link" v-for="item in list">
+      <van-card
+              :title="item.name"
+              :thumb="item.logo"
+              :desc="item.descr"
+              :price="item.edu"
+              :tags="item.tags"
+      >
+      </van-card>
+    </a>
+  </van-list>
+</div>
+
+</body>
+<!-- import script -->
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script src="https://unpkg.com/vant/lib/vant.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  new Vue({
+    el     : "#app",
+    data   : {
+      loading: false,
+      list   : []
+    },
+    created() {
+      this.onLoad()
+    },
+    methods: {
+      finished() {
+        this.loading = false
+      },
+      onLoad() {
+        this.loading = true
+        axios.get('/index.php?g=Admin&m=LoanMallShow&a=showData')
+             .then((response) => {
+               this.loading = false
+               console.log(response)
+               this.list = response.data
+             })
+             .catch((error) => {
+               this.loading = false
+               console.log(error)
+             })
+
+      }
+    }
+  })
+
+</script>
+</html>

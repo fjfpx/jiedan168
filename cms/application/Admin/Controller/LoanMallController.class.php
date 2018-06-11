@@ -99,4 +99,16 @@ class LoanMallController extends AdminbaseController
         }
     }
 
+    public function delete()
+    {
+        $id=I('id');
+        if ($this->loanMall->delete($id)!==false) {
+            $this->success("删除成功！");
+        } else {
+            $this->error("删除失败！");
+        }
+    }
+
+    
+
 }

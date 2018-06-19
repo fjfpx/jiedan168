@@ -9,23 +9,27 @@
   <link rel="stylesheet" href="https://unpkg.com/vant/lib/vant-css/index.css"/>
 </head>
 <body>
-<div id="app">
-  <van-list
-          v-model="loading"
-          :finished="finished"
-          @load="onLoad"
-  >
-    <a :href="item.link" v-for="item in list">
-      <van-card
-              :title="item.name"
-              :thumb="item.logo"
-              :desc="item.descr"
-              :price="item.edu"
-              :tags="item.tags"
-      >
-      </van-card>
-    </a>
-  </van-list>
+<div id="app" v-loading="loading" v-cloak>
+  <img src="http://cms.jiedan168.com/data/upload/20171224/5a3fca15dbfbd.png" style="width:100%;" />
+  <van-row v-for="item in list" v-cloak style="border-bottom:1px solid lightgrey;">
+    <van-col span="4">
+        <img :src="item.logo" style="width:60%;margin:10px;border:1px solid darkgrey;" />
+    </van-col>
+    <van-col span="12" style="padding:10px;font-size:12px;">
+      <span>{{item.name}}</span><br/>
+      <span style="color:dimgrey;">
+        {{item.descr}}
+      </span><br/>
+      <span>目前已有{{ item.shenqing}}人申请</span>
+    </van-col>
+    <van-col span="8" style="padding-top: 10px;font-size:12px;">
+      <span style="color:red;">{{ item.edu }}</span>
+      <br />
+      <a :href="item.link">
+        <van-button type="danger" size="small">立即申请</van-button>
+      </a>
+    </van-col>
+  </van-row>
 </div>
 
 </body>
@@ -65,4 +69,7 @@
   })
 
 </script>
+<style>
+  [v-cloak] {display: none;}
+</style>
 </html>

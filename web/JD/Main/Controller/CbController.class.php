@@ -431,31 +431,34 @@ class CbController extends BaseController
     public function moxie_recheck()
     {
         header('Content-Type: text/html; charset=utf-8');
-        $map                     = array();
-        $map['mx.datainfo']      = array('EXP', 'is NULL');
+        $map = array();
+        // $map['mx.datainfo']      = array('EXP', 'is NULL');
         $map['mx.report_status'] = array('EQ', 1);
         $map['mx.type']          = array('EQ', 0);
+        $map['mo.status']        = array('EQ', 3);
+        $map['mx.uid']           = array('NEQ', 4686);
         $count                   = M("Moxie")->alias('mx')
             ->join("LEFT JOIN __MEMBER_OPERATOR__ mo on mx.uid=mo.uid")
             ->join("LEFT JOIN __MEMBER__ m on mx.uid=m.user_id")
             ->where($map)->field("a.uid", "task_id")
             ->field(['m.user_id', 'm.username', 'mx.task_id'])
             ->order('m.user_id desc')
-            ->limit(20)
             ->count();
         echo "本次处理数据共{$count}条<br/>";
-        $lists                   = M("Moxie")->alias('mx')
+        $lists = M("Moxie")->alias('mx')
             ->join("LEFT JOIN __MEMBER_OPERATOR__ mo on mx.uid=mo.uid")
             ->join("LEFT JOIN __MEMBER__ m on mx.uid=m.user_id")
-            ->where($map)->field("a.uid", "task_id")
-            ->field(['m.user_id', 'm.username', 'mx.task_id','mx.report_message','mx.id'])
+            ->where($map)
+            ->field(['mx.uid', 'mx.task_id', 'm.user_id', 'm.username', 'mx.task_id', 'mx.report_message', 'mx.id'])
             ->order('m.user_id desc')
             ->limit(20)
             ->select();
         dump($lists);
+        // exit();
 
         $mx = new \Main\Lib\MoxieClass();
         foreach ($lists as $v) {
+            dump($v['username'] != '');
             if ($v['username'] != '') {
                 echo "正在处理电话:{$v['username']}<br/>";
                 $rst = $mx->getCarrier(array(
@@ -497,11 +500,11 @@ class CbController extends BaseController
                 //存储魔蝎报告
                 if ($v['report_message'] != '' || !$v['datainfo'] || $v['datainfo'] == '') {
                     echo "获取运营商魔蝎数据成功:{$v['username']}<br/>";
-                    $url                   = 'https://tenant.51datakey.com/carrier/report_data?data=' . $v['report_message'];
-                    echo $url."<br/>";
-                    $html                  = file_get_contents($url);
-                    $info                  = preg_replace('/style=" float: right ;margin-top: 6px ;margin-right: 5px"/i', 'style="display:none"', $html);
-                    echo base64_encode($info)."<br/>";
+                    $url = 'https://tenant.51datakey.com/carrier/report_data?data=' . $v['report_message'];
+                    echo $url . "<br/>";
+                    $html = file_get_contents($url);
+                    $info = preg_replace('/style=" float: right ;margin-top: 6px ;margin-right: 5px"/i', 'style="display:none"', $html);
+                    echo base64_encode($info) . "<br/>";
                     $report                = array(
                         'datainfo' => base64_encode($info)
                         // 'id'       => $v['id']
@@ -510,7 +513,7 @@ class CbController extends BaseController
                     $condition['datainfo'] = array('EXP', 'is null');
                     $condition['type']     = array('eq', 0);
                     $condition['uid']      = array('eq', $v['user_id']);
-                    $condition['id']       = array('eq',$v['id']);
+                    $condition['id']       = array('eq', $v['id']);
                     M("Moxie")->where($condition)->save($report);
                 }
             }

@@ -494,7 +494,7 @@ class AdminCreditController extends AdminbaseController
             $condition                  = array();
             $condition['uid']           = array('eq', $uid);
             $condition['report_status'] = array('eq', 1);
-            $condition['type']          = array('eq', 0);   
+            $condition['type']          = array('eq', 0);
             $condition['datainfo']      = array('EXP', 'IS NOT NULL');
 
             $rst = M("Moxie")->where($condition)->field("datainfo,id")->find();

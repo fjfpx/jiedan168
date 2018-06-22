@@ -16,10 +16,16 @@ class LoanMallShowController extends Controller
     {
         $this->loanMall = D('Common/LoanMall');
         $daichao=$this->loanMall->order('shunxu desc')->select();
-        foreach($daichao as $k=>$v){
+        $index=0;
+        foreach ($daichao as $k=>$v) {
             $daichao[$k]['descr']="{$v['qixian_start']}天-{$v['qixian_end']}天";
             $daichao[$k]['edu']="￥{$v['edu_start']}-￥{$v['edu_end']}";
-            $daichao[$k]['shenqing']=rand(1,100);
+            $index+=1;
+            if ($index<3) {
+                $daichao[$k]['shenqing']=rand(10000, 15000);
+            } else {
+                $daichao[$k]['shenqing']=rand(3000, 9999);
+            }
         }
         $this->ajaxReturn($daichao);
     }
